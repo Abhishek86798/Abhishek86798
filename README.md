@@ -23,7 +23,7 @@
 - 🌱 Deep-diving into: **LLM agent security**, **RAG pipelines**, **zero-trust architectures**
 - 🏆 Ranked **#20** on Coding Ninjas weekly leaderboard
 - 🤖 Published **production sentiment model** on HuggingFace with live REST API
-- 🎓 IIITM Gwalior — dual degree (B.Tech IT + MBA), multiple semesters remaining
+- 🎓 IIITM Gwalior — dual degree (B.Tech IT + MBA)
 
 ---
 
@@ -34,9 +34,9 @@
 | 🥈 Runner-Up | Blazing Wheels — Infotsav Fest, IIITM Gwalior |
 | 🏆 #20 Weekly Rank | Coding Ninjas Leaderboard |
 | ⚡ LeetCode | 240+ solved · Top 22.27% · Contest Rating 1612 |
-| 🧠 GeeksforGeeks | 500+ problems across platforms |
+| 🧠 GeeksforGeeks | 200+ problems across platforms |
 | 🤖 HuggingFace | Production sentiment model · Live REST inference endpoint |
-| 🏃 SIH Leader | Led 6-member team · 36-hour sprint · full-stack coordination |
+| 🏃 SIH Leader | Led 6-member team · full-stack coordination |
 | ⚽ Sports Leader | Led IIITM football team · Urja inter-college sports fest |
 
 ---
@@ -168,7 +168,7 @@
 |---|---|---|
 | 🟡 LeetCode | 240+ | Top **22.27%** · Contest Rating **1612** |
 | 🟢 GeeksforGeeks | 260+ | Active |
-| 🔵 Coding Ninjas | 500+ total | **#20** Weekly Leaderboard |
+| 🔵 Coding Ninjas | 100+ | **#20** Weekly Contest |
 
 </div>
 
