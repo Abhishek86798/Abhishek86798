@@ -2,147 +2,136 @@
 
 # Abhishek Kokadwar
 
-### Full-Stack Engineer · AI/ML Builder · Security Nerd
-### B.Tech IT + MBA · IIITM Gwalior · Graduating 2028
+**Full-Stack Engineer · AI/ML Builder · Zero-Trust Security**
 
-[![Gmail](https://img.shields.io/badge/Gmail-abhikokadwar2%40gmail.com-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:abhikokadwar2@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Abhishek%20Kokadwar-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/abhishek-kokadwar)
-[![GitHub](https://img.shields.io/badge/GitHub-Abhishek86798-181717?style=flat&logo=github&logoColor=white)](https://github.com/Abhishek86798)
-[![HuggingFace](https://img.shields.io/badge/HuggingFace-abhishek1005-FFD21E?style=flat&logo=huggingface&logoColor=black)](https://huggingface.co/abhishek1005)
+B.Tech IT + MBA · IIITM Gwalior · Graduating 2028
+
+[![Gmail](https://img.shields.io/badge/Gmail-abhikokadwar2@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:abhikokadwar2@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Abhishek%20Kokadwar-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/abhishek-kokadwar)
+[![HuggingFace](https://img.shields.io/badge/HuggingFace-abhishek1005-FFD21E?style=flat-square&logo=huggingface&logoColor=black)](https://huggingface.co/abhishek1005)
+[![Profile Views](https://komarev.com/ghpvc/?username=Abhishek86798&color=58A6FF&style=flat-square&label=Profile+Views)](https://github.com/Abhishek86798)
 
 </div>
 
 ---
 
-## 🚀 About Me
-
-> Full-stack software engineering student with production experience building **scalable APIs**, **real-time data pipelines**, and **secure databases**.
-> Shipped systems serving **500+ users**, solved **500+ DSA problems** (LeetCode top 22%), and built AI pipelines from healthcare to cybersecurity.
-
-- 🔭 Currently building: **MCP Zero-Trust Security Gateway** (FastAPI · Docker · React)
-- 🌱 Deep-diving into: **LLM agent security**, **RAG pipelines**, **zero-trust architectures**
-- 🏆 Ranked **#20** on Coding Ninjas weekly leaderboard
-- 🤖 Published **production sentiment model** on HuggingFace with live REST API
-- 🎓 IIITM Gwalior — dual degree (B.Tech IT + MBA)
-
----
-
-## 🏅 Achievements
-
-| Achievement | Details |
-|---|---|
-| 🥈 Runner-Up | Blazing Wheels — Infotsav Fest, IIITM Gwalior |
-| 🏆 #20 Weekly Rank | Coding Ninjas Leaderboard |
-| ⚡ LeetCode | 240+ solved · Top 22.27% · Contest Rating 1612 |
-| 🧠 GeeksforGeeks | 200+ problems across platforms |
-| 🤖 HuggingFace | Production sentiment model · Live REST inference endpoint |
-| 🏃 SIH Leader | Led 6-member team · full-stack coordination |
-| ⚽ Sports Leader | Led IIITM football team · Urja inter-college sports fest |
-
----
-
-## 🛠️ Tech Stack
-
-### Languages
-![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=postgresql&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)
-
-### Frontend
-![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white)
-![Shadcn UI](https://img.shields.io/badge/Shadcn%20UI-000000?style=flat&logo=shadcnui&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
-
-### Backend & Databases
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat&logo=firebase&logoColor=black)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat&logo=supabase&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
-![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6B35?style=flat&logoColor=white)
-
-### Auth & Security
-![RLS](https://img.shields.io/badge/Row--Level%20Security-4A90D9?style=flat)
-![Supabase Auth](https://img.shields.io/badge/Supabase%20Auth-3ECF8E?style=flat&logo=supabase&logoColor=white)
-![Firebase Auth](https://img.shields.io/badge/Firebase%20Auth-FFCA28?style=flat&logo=firebase&logoColor=black)
-![RBAC](https://img.shields.io/badge/RBAC-E53E3E?style=flat)
-![Zero Trust](https://img.shields.io/badge/Zero--Trust%20Design-1A1A2E?style=flat)
-
-### AI / ML
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white)
-![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat&logo=huggingface&logoColor=black)
-![BioBERT](https://img.shields.io/badge/BioBERT-FF6B6B?style=flat)
-![RAG](https://img.shields.io/badge/RAG%20Pipelines-7C3AED?style=flat)
-
-### Tools & Infra
-![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=figma&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white)
+> Shipped platforms to **500+ users** in production. Built AI pipelines solo at hackathons. Designed a zero-trust security layer for LLM agents.
+> LeetCode top **22%** · Contest Rating **1612** · **#20** Coding Ninjas weekly leaderboard.
 
 ---
 
 ## 🔥 Featured Projects
 
+<table>
+<tr>
+<td width="50%" valign="top">
+
 ### 🔐 MCP Zero-Trust Security Gateway
-**Python · FastAPI · Docker · SQLite · React + Tailwind**
+`Python` `FastAPI` `Docker` `React`
 
-> Security gateway enforcing zero-trust principles between LLM agents and MCP tool servers.
+No LLM tool server trusted by default. Every tool statically inspected, sandbox-profiled, and constrained to least-privilege at runtime.
 
-- 🛡️ Statically inspects & sandbox-profiles every tool before runtime — no tool server trusted by default
-- 🔍 Declared-vs-observed verification: runs MCP servers in hardened Docker sandbox (seccomp/strace) to detect capability mismatches
-- 📊 React + Tailwind dashboard surfacing blocked actions and security verdicts in real-time
-- 📚 Authored `DESIGN.md`, `THREAT_MODEL.md`, `CONTRACTS.md` — mapped to **OWASP MCP Top 10**
+- Hardened Docker sandbox (seccomp/strace) detects capability mismatches
+- Mapped to **OWASP MCP Top 10** threat model
+- React dashboard for real-time blocked-action verdicts
+- Documented: `DESIGN.md` · `THREAT_MODEL.md` · `CONTRACTS.md`
 
-[![GitHub](https://img.shields.io/badge/View%20on%20GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/Abhishek86798)
+[![Repo](https://img.shields.io/badge/GitHub-View%20Repo-181717?style=flat-square&logo=github)](https://github.com/Abhishek86798)
 
----
+</td>
+<td width="50%" valign="top">
 
-### 🚦 Trinetra — Parking Violation Prediction (Bangalore Traffic Police)
-**Python · ML · React · FastAPI · Next.js**
+### 🧬 Ayusynapse — Clinical Trial Matching
+`Python` `BioBERT` `LangChain` `ChromaDB` `FHIR`
 
-> End-to-end ML pipeline predicting parking violation hotspots for Bangalore traffic enforcement.
+End-to-end RAG pipeline matching patients to clinical trials — built solo at a Healthcare AI Hackathon.
 
-- 🗺️ Processes geospatial & temporal traffic data to surface actionable enforcement insights
-- 🌐 Public-facing Next.js dashboard + REST inference API deployed on Vercel
-- 📡 Enables real-time stakeholder queries for data-driven policing decisions
+- FHIR EMR parsing → BioBERT NER → ChromaDB → semantic search over eligibility
+- Structured JSON from NER drives downstream filtering & ranking
+- Full LangChain orchestration
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-gridlockl--fugg.vercel.app-00C7B7?style=flat&logo=vercel&logoColor=white)](https://gridlockl-fugg.vercel.app)
+[![Repo](https://img.shields.io/badge/GitHub-View%20Repo-181717?style=flat-square&logo=github)](https://github.com/Abhishek86798)
 
----
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-### 🧬 Ayusynapse — Clinical Trial Matching Pipeline
-**Python · BioBERT · LangChain · ChromaDB · FHIR · RAG**
+### 🚦 Trinetra — Parking Violation Prediction
+`Python` `ML` `FastAPI` `Next.js`
 
-> End-to-end pipeline matching patients to clinical trials using medical AI — built solo at Healthcare AI Hackathon.
+ML pipeline predicting violation hotspots for Bangalore Traffic Police.
 
-- 📋 Parses FHIR EMRs → BioBERT NER → ChromaDB embeddings → semantic search over trial eligibility
-- 🔗 Full RAG workflow with LangChain; structured JSON from NER drives downstream filtering & ranking
-- 🏥 Built end-to-end solo during a Healthcare AI Hackathon
+- Geospatial + temporal traffic data → actionable enforcement insights
+- Public Next.js dashboard + REST inference API on Vercel
 
-[![GitHub](https://img.shields.io/badge/View%20on%20GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/Abhishek86798)
+[![Demo](https://img.shields.io/badge/Live-Demo-00C7B7?style=flat-square&logo=vercel)](https://gridlockl-fugg.vercel.app)
+
+</td>
+<td width="50%" valign="top">
+
+### 🏪 VyaparPragati — Admin Platform
+`Next.js` `Firebase` `TypeScript` `PostgreSQL`
+
+Full admin platform built from scratch at Trionix Technologies — **500+ active users**.
+
+- 6 backend modules, real-time bidirectional messaging via Firestore listeners
+- Row-Level Security for strict tenant data isolation
+- Eliminated N+1 patterns via PostgreSQL join restructuring
+
+</td>
+</tr>
+</table>
 
 ---
 
 ## 💼 Experience
 
-### Junior Developer Intern · Bizzkonnect *(Nov 2025 – Jan 2026 · Remote)*
-- Engineered full-stack business portfolio platform (Next.js 16, TypeScript, Firebase) with SSR & dynamic routing; independently deployed to Vercel
-- Built scroll-triggered, responsive UI components (React 19, Tailwind CSS, Shadcn UI)
+**Junior Developer Intern · Bizzkonnect** *(Nov 2025 – Jan 2026 · Remote)*
+Full-stack business portfolio platform (Next.js 16, TypeScript, Firebase) — SSR, dynamic routing, deployed to Vercel. Built scroll-triggered UI with React 19, Tailwind, Shadcn UI.
 
-### Junior Web Developer · Trionix Technologies *(Jul 2024 – Sep 2024 · Remote)*
-- Architected **VyaparPragati** admin platform (Next.js + Firebase Firestore) — 6 backend modules, **500+ active users**; real-time bidirectional messaging via Firestore listeners
-- Built **Saaro Creations** e-commerce backend (Next.js 15, Supabase, PostgreSQL): relational schema, full CRUD REST API, Row-Level Security for tenant isolation
-- Eliminated N+1 patterns via PostgreSQL join restructuring — reduced DB round-trips, improved SSR performance observability
+**Junior Web Developer · Trionix Technologies** *(Jul 2024 – Sep 2024 · Remote)*
+Architected VyaparPragati (500+ users) and Saaro Creations e-commerce backend — full CRUD API, relational schema design, and RLS policies for tenant isolation.
+
+---
+
+## 🛠️ Tech Stack
+
+**Languages**
+![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+
+**Frontend**
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![Shadcn UI](https://img.shields.io/badge/Shadcn%20UI-000000?style=flat-square)
+
+**Backend & Databases**
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6B35?style=flat-square)
+
+**AI / ML**
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
+![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
+![BioBERT](https://img.shields.io/badge/BioBERT-FF6B6B?style=flat-square)
+![RAG](https://img.shields.io/badge/RAG%20Pipelines-7C3AED?style=flat-square)
+
+**Tools & Infra**
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
 
 ---
 
@@ -150,43 +139,55 @@
 
 <div align="center">
 
-![Abhishek's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Abhishek86798&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=58A6FF&text_color=C9D1D9)
+<img height="160" src="https://github-readme-stats.vercel.app/api?username=Abhishek86798&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=58A6FF&text_color=C9D1D9&count_private=true" />
+<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abhishek86798&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&hide=html%2Cjupyter%20notebook&langs_count=6" />
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Abhishek86798&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9)
+</div>
+
+<div align="center">
 
 ![GitHub Streak](https://streak-stats.demolab.com?user=Abhishek86798&theme=tokyonight&hide_border=true&background=0D1117&ring=58A6FF&fire=FF6B35&currStreakLabel=58A6FF)
 
 </div>
 
----
-
-## 📈 DSA Stats
-
 <div align="center">
 
-| Platform | Problems Solved | Rank / Rating |
-|---|---|---|
-| 🟡 LeetCode | 240+ | Top **22.27%** · Contest Rating **1612** |
-| 🟢 GeeksforGeeks | 260+ | Active |
-| 🔵 Coding Ninjas | 100+ | **#20** Weekly Contest |
+![Snake animation](https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/output/github-contribution-grid-snake-dark.svg)
 
 </div>
 
 ---
 
+## 📈 DSA
+
+<div align="center">
+
+| Platform | Solved | Rank / Rating |
+|:---:|:---:|:---:|
+| 🟡 LeetCode | 240+ | Top **22.27%** · Contest Rating **1612** |
+| 🟢 GeeksforGeeks | 260+ | Active |
+| 🔵 Coding Ninjas | 100+ | **#20** Weekly Leaderboard |
+
+</div>
+
+---
+
+## 🏅 Achievements
+
+- 🥈 **Runner-Up** — Blazing Wheels · Infotsav Fest, IIITM Gwalior
+- 🤖 **Published production model** on HuggingFace — live REST inference endpoint ([abhishek1005](https://huggingface.co/abhishek1005))
+- 🏃 **Led SIH team of 6** — 36-hour sprint, full-stack delivery under deadline
+- ⚽ **Led IIITM football team** — Urja inter-college sports fest
+
+---
+
 ## 🎓 Education
 
-**B.Tech Information Technology + MBA (5-Year Dual Degree)**
-IIITM Gwalior · 2023 – 2028 · GPA: 7.5 / 10.0
-
-*Coursework: SQL · Data Structures & Algorithms · Design & Analysis of Algorithms · OOP · DBMS*
+**B.Tech IT + MBA (5-Year Dual Degree)** · IIITM Gwalior · 2023–2028 · GPA 7.5/10
+*DSA · OOP · DBMS · Design & Analysis of Algorithms · SQL*
 
 ---
 
 <div align="center">
-
-*"Ship systems. Break assumptions. Secure everything."*
-
-![Profile Views](https://komarev.com/ghpvc/?username=Abhishek86798&color=58A6FF&style=flat&label=Profile+Views)
-
+<i>"Ship systems. Break assumptions. Secure everything."</i>
 </div>
