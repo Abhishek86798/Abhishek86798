@@ -87,10 +87,10 @@ Full admin platform built from scratch at Trionix Technologies — **500+ active
 
 ## 💼 Experience
 
-**Junior Developer Intern · Bizzkonnect** *(Nov 2025 – Jan 2026 · Remote)*
+**Software Developer Intern · Bizzkonnect** *(Nov 2025 – Jan 2026 · Remote)*
 Full-stack business portfolio platform (Next.js 16, TypeScript, Firebase) — SSR, dynamic routing, deployed to Vercel. Built scroll-triggered UI with React 19, Tailwind, Shadcn UI.
 
-**Junior Web Developer · Trionix Technologies** *(Jul 2024 – Sep 2024 · Remote)*
+**Web Developer Intern· Trionix Technologies** *(Jul 2024 – Sep 2024 · Remote)*
 Architected VyaparPragati (500+ users) and Saaro Creations e-commerce backend — full CRUD API, relational schema design, and RLS policies for tenant isolation.
 
 ---
