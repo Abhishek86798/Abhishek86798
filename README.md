@@ -28,9 +28,65 @@ The habit I'm trying to build is measuring the thing rather than assuming it. It
 
 <img src="https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/main/assets/rule.svg" width="100%" alt="" />
 
-<img src="https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/main/assets/h-built.svg" width="100%" alt="Things I've built" />
+<img src="https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/main/assets/h-exp.svg" width="100%" alt="Experience" />
+
+Two internships, remote, sole developer on both. Both shipped to a live domain — which is a different kind of pressure than a repo nobody deploys.
+
+<table>
+<tr>
+<td width="32%" valign="top">
+
+**HiGigAi**
+<br/><sub>Software Developer Intern</sub>
+<br/><sub>Jul 2026 – Aug 2026 · remote</sub>
+
+<sub>`next.js` · `sanity cms`</sub>
+<br/><sub>`cloudinary` · `vercel`</sub>
+
+<sub>↗ <a href="https://www.tridentpublicschool.com/">tridentpublicschool.com</a></sub>
+<br/><sub>↗ <a href="https://saaro-creations.vercel.app/">saaro-creations</a></sub>
+
+</td>
+<td valign="top">
+
+A one-month engagement that had to outlive me. **Five branch sites on five subdomains from a single Next.js codebase**, so onboarding a sixth branch is content entry rather than a deploy.
+
+25+ Sanity schemas with the Studio scoped through Structure Builder — the part that actually mattered: five branch admins manage 15+ page types with zero developer involvement, including mine.
+
+Recurring infra came to **$0/month**. A planned Supabase tier replaced with Sanity-native forms and Cloudinary media, ISR plus webhooks for redeploy-free publishing. The cheapest thing to operate is the thing you didn't provision.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+**Trionix Technologies**
+<br/><sub>Software Developer Intern</sub>
+<br/><sub>Jul 2025 – Sep 2025 · remote</sub>
+
+<sub>`next.js` · `postgresql`</sub>
+<br/><sub>`firebase` · `row-level security`</sub>
+
+</td>
+<td valign="top">
+
+Architected the **Vyapar Pragati** admin platform: 6 backend modules, 500+ users, real-time Firestore messaging in place of manual polling.
+
+Normalized the PostgreSQL schema with **Row-Level Security**, so tenant isolation is a database guarantee rather than a `WHERE` clause somebody has to remember. Eliminated the N+1 queries that were doubling DB round-trips on SSR routes.
+
+First time a design decision of mine had users attached to it. That's the part that stuck.
+
+</td>
+</tr>
+</table>
+
+<img src="https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/main/assets/rule.svg" width="100%" alt="" />
+
+<img src="https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/main/assets/h-active.svg" width="100%" alt="Currently building" />
 
 ### GridPulse — real-time IoT energy streaming
+
+<sub>`kafka` · `spark structured streaming` · `pyspark` · `postgres` · `parquet` · `docker` · `streamlit` · <a href="https://github.com/Abhishek86798/GridPulse">repo →</a></sub>
 
 Live electrical telemetry from **42 smart sub-meters** across **19 campus buildings**, ingested, aggregated and served.
 
@@ -44,13 +100,23 @@ The pipeline is deliberately boring in shape and specific in its choices. A Pyth
 
 Storage splits two ways, and the split is the design. Hot path: aggregates land in **PostgreSQL** through tuned JDBC micro-batches — batch size 5,000, 15-second trigger — a deliberate trade of connection overhead against freshness that holds sub-minute latency from meter to queryable table. Cold path: raw telemetry writes to **Parquet partitioned by year/month/day**, so the full history stays cheap to scan later instead of bloating the operational store. A **Streamlit** dashboard reads the hot path with fragment-scoped polling, refreshing live aggregates every 3 seconds without re-rendering the layout around them.
 
-`kafka` · `spark structured streaming` · `pyspark` · `postgres` · `parquet` · `docker` · `streamlit`
-
-[Repo →](https://github.com/Abhishek86798/GridPulse)
-
 ---
 
+### CIDRA — CI debugging and repair agent
+
+<sub>`python` · `langgraph` · `claude api` · `docker` · `pydantic` · <a href="https://github.com/Abhishek86798/CIDRA">repo →</a></sub>
+
+A **LangGraph** pipeline that reads a failing GitHub Actions run, works out why, and then — the part that matters — reproduces the failure in a sandboxed Docker container and verifies the fix actually passes before proposing it. Model output is Pydantic-validated with bounded retry, so a malformed response is a retry rather than a crash.
+
+100% Tier-1/2 diagnosis accuracy across 53+ tests, with **zero false "verified" claims**. The second number is the one I care about: an agent that confidently proposes a broken fix is worse than one that says it doesn't know.
+
+<img src="https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/main/assets/rule.svg" width="100%" alt="" />
+
+<img src="https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/main/assets/h-done.svg" width="100%" alt="Shipped" />
+
 ### MCP Zero-Trust Gateway — kernel confinement for agent tools
+
+<sub>`python` · `fastapi` · `seccomp-bpf` · `landlock` · `docker` · <a href="https://pypi.org/project/mcp-ztgateway/">PyPI →</a> · <a href="https://github.com/Abhishek86798/MCP_Zero-Trust_Gateway_BTP">repo →</a> · <a href="https://drive.google.com/drive/folders/1UxaBiMxdcX8KH6rdeaSiJ0nu2eWcyXNQ?usp=sharing">evaluation →</a></sub>
 
 An MCP tool server describes its own capabilities. That description is a claim, not a fact, and the gateway treats it that way: **declare, verify, confine.**
 
@@ -64,62 +130,21 @@ Each server is profiled under `strace` in a `--cap-drop ALL --read-only` contain
 
 The part I'd defend in an interview isn't the enforcement, it's the evaluation. A 7-corpus, 583-row harness that separates *detection* from *containment*, because a gateway that notices an attack and doesn't stop it deserves a different number than one that stops it. 84.6% runtime defence, 100% containment, 87.8% on MCPTox.
 
-`python` · `fastapi` · `seccomp-bpf` · `landlock` · `docker` · [PyPI: mcp-ztgateway](https://pypi.org/project/mcp-ztgateway/)
-
-[Repo →](https://github.com/Abhishek86798/MCP_Zero-Trust_Gateway_BTP) · [Evaluation results →](https://drive.google.com/drive/folders/1UxaBiMxdcX8KH6rdeaSiJ0nu2eWcyXNQ?usp=sharing)
-
 ---
 
-### CIDRA — CI debugging and repair agent
+### Trinetra — parking violation prediction
 
-A **LangGraph** pipeline that reads a failing GitHub Actions run, works out why, and then — the part that matters — reproduces the failure in a sandboxed Docker container and verifies the fix actually passes before proposing it. Model output is Pydantic-validated with bounded retry, so a malformed response is a retry rather than a crash.
+<sub>`python` · `scikit-learn` · `fastapi` · `next.js` · `vercel` · <a href="https://gridlockl-fugg.vercel.app">live demo →</a></sub>
 
-100% Tier-1/2 diagnosis accuracy across 53+ tests, with zero false "verified" claims. The second number is the one I care about: an agent that confidently proposes a broken fix is worse than one that says it doesn't know.
+Built for the Flipkart Gridlock hackathon, aimed at Bangalore Traffic Police: given where and when violations have happened before, predict where enforcement should go next. **Top 5%.**
 
-`python` · `langgraph` · `claude api` · `docker` · `pydantic`
-
-[Repo →](https://github.com/Abhishek86798/CIDRA)
-
-<img src="https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/main/assets/rule.svg" width="100%" alt="" />
-
-<img src="https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/main/assets/h-exp.svg" width="100%" alt="Experience" />
-
-Two internships, remote, sole developer on both. Both shipped to a live domain — which is a different kind of pressure than a repo nobody deploys.
-
-**HiGigAi** · Software Developer Intern · Jul 2026 – Aug 2026
-<br/><sub>`next.js` · `sanity cms` · `cloudinary` · `vercel` · shipped <a href="https://www.tridentpublicschool.com/">tridentpublicschool.com</a> and <a href="https://saaro-creations.vercel.app/">saaro-creations</a></sub>
-
-A one-month engagement that had to outlive me. Five branch sites on five subdomains from a single Next.js codebase, so onboarding a sixth branch is content entry rather than a deploy. 25+ Sanity schemas with the Studio scoped through Structure Builder, which is the part that actually mattered: five branch admins manage 15+ page types with zero developer involvement, including mine.
-
-Recurring infra came to **$0/month** — a planned Supabase tier replaced with Sanity-native forms and Cloudinary media, ISR plus webhooks for redeploy-free publishing. Cheapest thing to operate is the thing you didn't provision.
-
-**Trionix Technologies** · Software Developer Intern · Jul 2025 – Sep 2025
-<br/><sub>`next.js` · `postgresql` · `firebase` · `row-level security`</sub>
-
-Architected the Vyapar Pragati admin platform: 6 backend modules, 500+ users, real-time Firestore messaging in place of manual polling. Normalized the PostgreSQL schema with Row-Level Security, so tenant isolation is a database guarantee rather than a `WHERE` clause somebody has to remember — and eliminated the N+1 queries that were doubling DB round-trips on SSR routes.
-
-First time a design decision of mine had users attached to it. That's the part that stuck.
-
-<img src="https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/main/assets/rule.svg" width="100%" alt="" />
-
-<img src="https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/main/assets/h-path.svg" width="100%" alt="How I got here" />
-
-<table>
-<tr><td width="110"><b>2023</b></td><td>Started B.Tech IT + MBA at IIITM Gwalior. Spent the first year in C — pointers, manual allocation, the stuff that makes you careful later.</td></tr>
-<tr><td><b>early 2024</b></td><td>Figma and design systems. Prototyped <b>CampusSafe</b>, a campus emergency SOS app. Nothing I've built since has been improved by forgetting that someone has to use it.</td></tr>
-<tr><td><b>late 2024</b></td><td>C++ and OOP. Implemented the core data structures myself rather than importing them, which is where most of my instinct for cost per operation came from.</td></tr>
-<tr><td><b>early 2025</b></td><td>Moved to Python — PyTorch, NLP, first RAG experiments and transformer pipelines.</td></tr>
-<tr><td><b>mid 2025</b></td><td>Built <b>AyuSynapse</b> solo at a healthcare AI hackathon: FHIR EMR parsing into BioBERT NER into ChromaDB, matching patients to clinical trials in a 36-hour sprint.</td></tr>
-<tr><td><b>jul&#8211;sep 2025</b></td><td>Internship at <b>Trionix</b>, sole developer: the Vyapar Pragati admin platform, 6 modules, 500+ users, Postgres with Row-Level Security.</td></tr>
-<tr><td><b>jul&#8211;aug 2026</b></td><td>Internship at <b>HiGigAi</b>: five branch sites from one Next.js codebase, handed to five non-technical admins and running at $0/month.</td></tr>
-<tr><td><b>now</b></td><td>Streaming data and trust boundaries. <b>GridPulse</b> on Kafka and Spark, the <b>MCP gateway</b> on seccomp, <b>CIDRA</b> on LangGraph — and DSA most days.</td></tr>
-</table>
+The modelling problem was more about the join than the model. Violation records, geospatial zones and time-of-day buckets have to line up before anything downstream means much, and most of the work was getting that feature table honest — deduplicating locations that appear under three spellings, and resisting the urge to read a hotspot into what is really just a place with more reporting. Served as a REST inference API with a Next.js dashboard on top, so the prediction lands somewhere a non-technical user can act on it.
 
 <img src="https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/main/assets/rule.svg" width="100%" alt="" />
 
 <img src="https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/main/assets/h-dsa.svg" width="100%" alt="DSA" />
 
-The most consistent thing I do. 306 active days, for long enough that the C++ years and the "cost per operation" instinct above are the same story.
+The most consistent thing I do — 306 active days, and the reason a cost-per-operation instinct shows up in everything above.
 
 <div align="center">
 
@@ -127,7 +152,7 @@ The most consistent thing I do. 306 active days, for long enough that the C++ ye
 
 <br/>
 
-<sub>1,000+ across <a href="https://leetcode.com/u/abhiii1005_/">LeetCode</a> (top 17%), <a href="https://www.geeksforgeeks.org/profile/abhi_iiitm">GeeksforGeeks</a>, <a href="https://www.naukri.com/code360/profile/1d0eab26-a66e-4d90-99ed-46328d444eab">Code360</a> and CodeChef · tracked on <a href="https://codolio.com/profile/abhishek_1005">Codolio</a></sub>
+<sub>1,000+ across <a href="https://leetcode.com/u/abhiii1005_/">LeetCode</a> (top 17%), <a href="https://www.geeksforgeeks.org/profile/abhi_iiitm">GeeksforGeeks</a>, <a href="https://www.naukri.com/code360/profile/1d0eab26-a66e-4d90-99ed-46328d444eab">Code360</a> (2x monthly topper) and CodeChef · tracked on <a href="https://codolio.com/profile/abhishek_1005">Codolio</a></sub>
 
 </div>
 
@@ -164,8 +189,9 @@ Also contributing through **GSSoC**, and a published inference model on [Hugging
 ![Linux](https://img.shields.io/badge/Linux-0d1117?style=flat-square&logo=linux&logoColor=white&labelColor=0d1117)
 ![AWS](https://img.shields.io/badge/AWS-0d1117?style=flat-square&logo=amazonwebservices&logoColor=white&labelColor=0d1117)
 
-![FastAPI](https://img.shields.io/badge/FastAPI-0d1117?style=flat-square&logo=fastapi&logoColor=white&labelColor=0d1117)
 ![Next.js](https://img.shields.io/badge/Next.js-0d1117?style=flat-square&logo=nextdotjs&logoColor=white&labelColor=0d1117)
+![FastAPI](https://img.shields.io/badge/FastAPI-0d1117?style=flat-square&logo=fastapi&logoColor=white&labelColor=0d1117)
+![Sanity](https://img.shields.io/badge/Sanity-0d1117?style=flat-square&logo=sanity&logoColor=white&labelColor=0d1117)
 ![Firebase](https://img.shields.io/badge/Firebase-0d1117?style=flat-square&logo=firebase&logoColor=white&labelColor=0d1117)
 ![LangChain](https://img.shields.io/badge/LangChain-0d1117?style=flat-square&logo=langchain&logoColor=white&labelColor=0d1117)
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-0d1117?style=flat-square&logo=huggingface&logoColor=white&labelColor=0d1117)

@@ -33,9 +33,9 @@ RULE_SVG = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 24" widt
 
 # (filename, label, right-aligned note)
 HEADERS = [
-    ("h-built",  "things i've built",   "gridpulse · gateway · cidra"),
+    ("h-active", "currently building",  "cidra · gridpulse"),
+    ("h-done",   "shipped",             "finished, measured, left alone"),
     ("h-exp",    "experience",          "two internships, sole developer"),
-    ("h-path",   "how i got here",      "2023 → now"),
     ("h-oss",    "open source",         "early days"),
     ("h-stack",  "stack",               "what i reach for"),
     ("h-dsa",    "dsa",                 "859 solved · 306 active days"),
