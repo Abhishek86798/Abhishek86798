@@ -84,17 +84,21 @@ A **LangGraph** pipeline that reads a failing GitHub Actions run, works out why,
 
 <img src="https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/main/assets/h-exp.svg" width="100%" alt="Experience" />
 
-Two internships, sole developer on both, and both shipped to a live domain — which is a different kind of pressure than a repo nobody deploys.
+Two internships, remote, sole developer on both. Both shipped to a live domain — which is a different kind of pressure than a repo nobody deploys.
 
-<!-- TODO: replace the role titles and dates below with the exact lines from your résumé. -->
+**HiGigAi** · Software Developer Intern · Jul 2026 – Aug 2026
+<br/><sub>`next.js` · `sanity cms` · `cloudinary` · `vercel` · shipped <a href="https://www.tridentpublicschool.com/">tridentpublicschool.com</a> and <a href="https://saaro-creations.vercel.app/">saaro-creations</a></sub>
 
-**Trionix** · software development intern · *sole developer* — [saaro-creations.vercel.app →](https://saaro-creations.vercel.app/)
+A one-month engagement that had to outlive me. Five branch sites on five subdomains from a single Next.js codebase, so onboarding a sixth branch is content entry rather than a deploy. 25+ Sanity schemas with the Studio scoped through Structure Builder, which is the part that actually mattered: five branch admins manage 15+ page types with zero developer involvement, including mine.
 
-Owned the build end to end, schema through deployment. PostgreSQL data modelling with Row-Level Security, so tenant isolation is a database guarantee rather than a `WHERE` clause somebody has to remember. Being the only developer meant every design decision was also mine to live with two weeks later, which is a faster teacher than any code review.
+Recurring infra came to **$0/month** — a planned Supabase tier replaced with Sanity-native forms and Cloudinary media, ISR plus webhooks for redeploy-free publishing. Cheapest thing to operate is the thing you didn't provision.
 
-**Higigai** · software development intern · *sole developer* — [tridentpublicschool.com →](https://www.tridentpublicschool.com/)
+**Trionix Technologies** · Software Developer Intern · Jul 2025 – Sep 2025
+<br/><sub>`next.js` · `postgresql` · `firebase` · `row-level security`</sub>
 
-A production site for a real school, with real people typing into it on a Monday morning. First time a design mistake of mine had users attached to it. That's the part that stuck.
+Architected the Vyapar Pragati admin platform: 6 backend modules, 500+ users, real-time Firestore messaging in place of manual polling. Normalized the PostgreSQL schema with Row-Level Security, so tenant isolation is a database guarantee rather than a `WHERE` clause somebody has to remember — and eliminated the N+1 queries that were doubling DB round-trips on SSR routes.
+
+First time a design decision of mine had users attached to it. That's the part that stuck.
 
 <img src="https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/main/assets/rule.svg" width="100%" alt="" />
 
@@ -106,7 +110,8 @@ A production site for a real school, with real people typing into it on a Monday
 <tr><td><b>late 2024</b></td><td>C++ and OOP. Implemented the core data structures myself rather than importing them, which is where most of my instinct for cost per operation came from.</td></tr>
 <tr><td><b>early 2025</b></td><td>Moved to Python — PyTorch, NLP, first RAG experiments and transformer pipelines.</td></tr>
 <tr><td><b>mid 2025</b></td><td>Built <b>AyuSynapse</b> solo at a healthcare AI hackathon: FHIR EMR parsing into BioBERT NER into ChromaDB, matching patients to clinical trials in a 36-hour sprint.</td></tr>
-<tr><td><b>late 2025</b></td><td>Internships at Trionix and Higigai, sole developer on both. Postgres schemas, Row-Level Security, two sites live on real domains.</td></tr>
+<tr><td><b>jul&#8211;sep 2025</b></td><td>Internship at <b>Trionix</b>, sole developer: the Vyapar Pragati admin platform, 6 modules, 500+ users, Postgres with Row-Level Security.</td></tr>
+<tr><td><b>jul&#8211;aug 2026</b></td><td>Internship at <b>HiGigAi</b>: five branch sites from one Next.js codebase, handed to five non-technical admins and running at $0/month.</td></tr>
 <tr><td><b>now</b></td><td>Streaming data and trust boundaries. <b>GridPulse</b> on Kafka and Spark, the <b>MCP gateway</b> on seccomp, <b>CIDRA</b> on LangGraph — and DSA most days.</td></tr>
 </table>
 
@@ -122,7 +127,7 @@ The most consistent thing I do. 306 active days, for long enough that the C++ ye
 
 <br/>
 
-<sub>across <a href="https://leetcode.com/u/abhiii1005_/">LeetCode</a>, <a href="https://www.geeksforgeeks.org/profile/abhi_iiitm">GeeksforGeeks</a>, <a href="https://www.naukri.com/code360/profile/1d0eab26-a66e-4d90-99ed-46328d444eab">Code360</a> and CodeChef · tracked on <a href="https://codolio.com/profile/abhishek_1005">Codolio</a></sub>
+<sub>1,000+ across <a href="https://leetcode.com/u/abhiii1005_/">LeetCode</a> (top 17%), <a href="https://www.geeksforgeeks.org/profile/abhi_iiitm">GeeksforGeeks</a>, <a href="https://www.naukri.com/code360/profile/1d0eab26-a66e-4d90-99ed-46328d444eab">Code360</a> and CodeChef · tracked on <a href="https://codolio.com/profile/abhishek_1005">Codolio</a></sub>
 
 </div>
 
