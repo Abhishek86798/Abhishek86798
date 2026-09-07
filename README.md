@@ -68,13 +68,35 @@ A **LangGraph** pipeline that reads a failing GitHub Actions run, works out why,
 
 ---
 
-### VyaparPragati — multi-tenant admin platform
+### Trinetra — parking violation prediction
 
-Built at Trionix Technologies. 6 backend modules, 500+ users.
+Built for the Flipkart Gridlock hackathon, aimed at Bangalore Traffic Police: given where and when violations have happened before, predict where enforcement should go next.
 
-Tenant isolation is enforced with PostgreSQL **Row-Level Security** at the database layer rather than in application code, so a forgotten `WHERE` clause in some future handler can't leak another tenant's rows. Profiling the data access layer turned up N+1 patterns on server-rendered routes; restructuring the joins halved DB round-trips. Real-time updates moved from a manual polling loop to event-driven Firestore listeners.
+The modelling problem is more about the join than the model. Violation records, geospatial zones and time-of-day buckets have to line up before anything downstream means much, and most of the work was getting that feature table honest — deduplicating locations that appear under three spellings, and resisting the urge to read a hotspot into what is really just a place with more reporting. The output is served as a REST inference API with a Next.js dashboard on top, so the prediction lands somewhere a non-technical user can act on it.
 
-`next.js` · `postgres` · `row-level security` · `firebase` · `typescript`
+Top 5% in the hackathon.
+
+`python` · `scikit-learn` · `fastapi` · `next.js` · `vercel`
+
+[Live demo →](https://gridlockl-fugg.vercel.app)
+
+<!-- Add one line here naming the model you actually used and roughly how it scored.
+     Even a modest number beats none — it's the difference between "I trained a model"
+     and "I know how well it worked." -->
+
+---
+
+## How I got here
+
+<table>
+<tr><td width="90"><b>2023</b></td><td>Started B.Tech IT + MBA at IIITM Gwalior. Spent the first year in C — pointers, manual allocation, the stuff that makes you careful later.</td></tr>
+<tr><td><b>early 2024</b></td><td>Figma and design systems. Prototyped <b>CampusSafe</b>, a campus emergency SOS app. Nothing I've built since has been improved by forgetting that someone has to use it.</td></tr>
+<tr><td><b>late 2024</b></td><td>C++ and OOP. Implemented the core data structures myself rather than importing them, which is where most of my instinct for cost per operation came from.</td></tr>
+<tr><td><b>early 2025</b></td><td>Moved to Python — PyTorch, NLP, first RAG experiments and transformer pipelines.</td></tr>
+<tr><td><b>mid 2025</b></td><td>Built <b>AyuSynapse</b> solo at a healthcare AI hackathon: FHIR EMR parsing into BioBERT NER into ChromaDB, matching patients to clinical trials in a 36-hour sprint.</td></tr>
+<tr><td><b>late 2025</b></td><td>Internships at Trionix and Bizzkonnect, as the only developer on both. Postgres schemas, Row-Level Security, and the first time a design mistake of mine had users attached to it.</td></tr>
+<tr><td><b>now</b></td><td>Streaming data and trust boundaries. <b>GridPulse</b> on Kafka and Spark, the <b>MCP gateway</b> on seccomp, and DSA most days.</td></tr>
+</table>
 
 ---
 
@@ -116,6 +138,22 @@ Also: active **GSSoC** contributor, and a published inference model on [HuggingF
 
 ---
 
+## DSA
+
+<div align="center">
+
+| | solved | |
+|:---|:---:|:---|
+| [LeetCode](https://leetcode.com/u/abhiii1005_/) | 393 medium · 55 hard | contest rating 1612 |
+| [GeeksforGeeks](https://www.geeksforgeeks.org/profile/abhi_iiitm) | 260+ | active |
+| [Code360](https://www.naukri.com/code360/profile/1d0eab26-a66e-4d90-99ed-46328d444eab) | 100+ | 2x monthly topper |
+
+<sub>852 total, tracked in one place on <a href="https://codolio.com/profile/abhishek_1005">Codolio</a></sub>
+
+</div>
+
+---
+
 ## Lately
 
 <div align="center">
@@ -125,7 +163,22 @@ Also: active **GSSoC** contributor, and a published inference model on [HuggingF
 
 <br/><br/>
 
-<sub>B.Tech IT + MBA · IIITM Gwalior · graduating 2028 &nbsp;·&nbsp; 1,000+ DSA problems across <a href="https://leetcode.com/u/abhiii1005_/">LeetCode</a>, <a href="https://www.naukri.com/code360/profile/1d0eab26-a66e-4d90-99ed-46328d444eab">Code360</a> and <a href="https://www.geeksforgeeks.org/profile/abhi_iiitm">GeeksforGeeks</a></sub>
+<img width="98%" src="https://streak-stats.demolab.com?user=Abhishek86798&hide_border=true&background=0d1117&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff&sideLabels=8b949e&dates=6e7681" alt="contribution streak" />
+
+<br/><br/>
+
+<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=Abhishek86798&bg_color=0d1117&color=e6edf3&line=58a6ff&point=58a6ff&area=true&area_color=1f6feb&hide_border=true" alt="contribution heatmap" />
+
+<br/><br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/output/github-contribution-grid-snake-dark.svg" />
+  <img width="100%" src="https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/output/github-contribution-grid-snake.svg" alt="contribution snake" />
+</picture>
+
+<br/><br/>
+
+<sub>B.Tech IT + MBA · IIITM Gwalior · graduating 2028</sub>
 
 <br/>
 
