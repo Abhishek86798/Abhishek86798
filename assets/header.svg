@@ -1,40 +1,463 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" width="1000" height="300" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTozNzk0M2Q4OS00NmVhLTQ4NWYtYWY1OS0xZDcxYjY5NGExNGUAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaFHvud5lRdU2y0tARFpMEkMAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDo1Y2FkNGFhMi0wYWU0LTQ4YmYtODZlMi01ZDJmYmIxYWNmMDZscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoRSt7pvOV+eyrwkncCy/q2QAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggxD71pxV1Iz724Mw1kRWrPupskKVZTLnHO7VY6XQgIM+kZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaM24z538bIcyptKOD5rVxlcAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCBXU4tzJ0M05/gWVSj9U1Rd5BjT0DoNYMxMwSFcrckEqmRuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBjfZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjM3OTQzZDg5LTQ2ZWEtNDg1Zi1hZjU5LTFkNzFiNjk0YTE0ZS9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOmE0YjRiNjA3LTZiNzQtNDJmNC04ZTlhLTA4NTA5MjJmM2JjM3JjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCDEPvWnFXUjPvbgzDWRFas+6myQpVlMucc7tVjpdCAgz6JjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggHCarf1p3qKkGiIRUrUbHbDgEjaPnmC1c6kDUes1H6P2iY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggzvpaRi3BWBBPPqw/34/q1sxlb9tPuALgU7MiZ6vmp3F0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQFSgVmgvn7NUUCUrYj0NEVk9cFQHOSwz3/5DyJeU+lPnsHrKunrioWIbfwQqX3P5cejNbWA9Qiw14rHye1uKKJs=</c2pa:manifest></metadata>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420"
+     role="img" aria-labelledby="t d">
+  <title id="t">abhishek kokadwar</title>
+  <desc id="d">A four-scene loop. First a terminal session typing out pipeline and evaluation results. Then GridPulse splitting a Kafka stream into a hot Postgres path and a cold Parquet path behind an event-time watermark. Then the MCP gateway subtracting a declared capability set from observed syscalls to build a seccomp filter. Then CIDRA reproducing a CI failure in a sandbox and refusing to propose a fix it could not verify.</desc>
+
+  <!--
+    ONE CLOCK, FOUR SCENES.
+
+    The master loop is 48s; each scene owns 12s of it. Scene visibility is
+    driven by keyframe percentages on that 48s clock, never animation-delay,
+    because delays drift apart and two scenes painted at once is the bug.
+
+    Everything inside a scene animates on 12s (or 2s / 3s / 4s / 6s, which
+    divide it evenly), so each inner loop is at phase zero the moment its
+    scene appears and replays identically every time.
+
+    Positioning transforms go on outer groups, animations on inner ones: a
+    CSS transform in @keyframes replaces the SVG transform attribute
+    outright, silently relocating anything carrying both.
+  -->
+  <style>
+    .bg     { fill: #0d1117 }
+    .frame  { fill: none; stroke: #30363d; stroke-width: 1 }
+    .gdot   { fill: #30363d }
+    .dot    { fill: #30363d }
+    .rule   { stroke: #21262d; stroke-width: 1 }
+    .name   { font: 700 42px ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+              fill: #f0f6fc; letter-spacing: 1.5px }
+    .sub    { font: 400 14px ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+              fill: #8b949e; letter-spacing: 1.4px }
+    .pr     { font: 400 14px ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; fill: #3fb950 }
+    .cmd    { font: 400 14px ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; fill: #e6edf3 }
+    .out    { font: 400 14px ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; fill: #8b949e }
+    .h1     { font: 600 15px ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; fill: #58a6ff }
+    .h2     { font: 400 15px ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; fill: #6e7681 }
+    .bx     { fill: #161b22; stroke: #30363d; stroke-width: 1 }
+    .bxt    { font: 600 12px ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; fill: #e6edf3 }
+    .bxs    { font: 400 10px ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; fill: #8b949e }
+    .lbl    { font: 400 11px ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; fill: #8b949e }
+    .cap    { font: 400 11.5px ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; fill: #6e7681 }
+    .tiny   { font: 400 12px ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; fill: #6e7681 }
+    .mono   { font: 400 12px ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; fill: #c9d1d9 }
+    .ok     { fill: #3fb950 } .acc { fill: #58a6ff } .warn { fill: #d29922 } .vio { fill: #a371f7 }
+    .wire   { fill: none; stroke: #30363d; stroke-width: 1.5 }
+    .track  { fill: #21262d }
+    .caret  { fill: #58a6ff }
+    .trace  { fill: none; stroke: #58a6ff; stroke-width: 2; stroke-linecap: round; stroke-dasharray: 150 2542 }
+    .sweepbar { fill: #58a6ff }
+    .head   { fill: #30363d }
+
+    @media (prefers-color-scheme: light) {
+      .bg { fill: #ffffff } .frame { stroke: #d0d7de }
+      .gdot { fill: #d8dee4 } .dot { fill: #d0d7de } .rule { stroke: #eaeef2 }
+      .name { fill: #1f2328 } .sub { fill: #656d76 }
+      .pr { fill: #1a7f37 } .cmd { fill: #1f2328 } .out { fill: #656d76 }
+      .h1 { fill: #0969da } .h2 { fill: #8c959f }
+      .bx { fill: #f6f8fa; stroke: #d0d7de } .bxt { fill: #1f2328 } .bxs { fill: #656d76 }
+      .lbl { fill: #656d76 } .cap { fill: #656d76 } .tiny { fill: #8c959f } .mono { fill: #1f2328 }
+      .ok { fill: #1a7f37 } .acc { fill: #0969da } .warn { fill: #9a6700 } .vio { fill: #8250df }
+      .wire { stroke: #d0d7de } .track { fill: #eaeef2 } .head { fill: #d0d7de }
+      .caret { fill: #0969da } .trace { stroke: #0969da } .sweepbar { fill: #0969da }
+      .sA, .sB, .sD, .sE { stop-color: #0969da } .sC { stop-color: #218bff }
+    }
+
+    /* ============ persistent chrome ============ */
+    .boot  { animation: boot .8s cubic-bezier(.2,.8,.2,1) both }
+    @keyframes boot { from { opacity: 0; transform: translateY(10px) } to { opacity: 1; transform: translateY(0) } }
+
+    .drift { animation: drift 18s linear infinite }
+    @keyframes drift { to { transform: translate(26px, 26px) } }
+
+    .trace { animation: trace 12s linear infinite }
+    @keyframes trace { to { stroke-dashoffset: -2692 } }
+
+    /* ============ the 48s scene switcher ============ */
+    .sc { animation-duration: 48s; animation-timing-function: cubic-bezier(.4,0,.2,1); animation-iteration-count: infinite }
+    .sc1 { animation-name: sc1 } .sc2 { animation-name: sc2 }
+    .sc3 { animation-name: sc3 } .sc4 { animation-name: sc4 }
+    @keyframes sc1 {
+      0%              { opacity: 0; transform: translateY(10px) }
+      1.25%, 23.75%   { opacity: 1; transform: translateY(0) }
+      25%, 100%       { opacity: 0; transform: translateY(-10px) }
+    }
+    @keyframes sc2 {
+      0%, 25%         { opacity: 0; transform: translateY(10px) }
+      26.25%, 48.75%  { opacity: 1; transform: translateY(0) }
+      50%, 100%       { opacity: 0; transform: translateY(-10px) }
+    }
+    @keyframes sc3 {
+      0%, 50%         { opacity: 0; transform: translateY(10px) }
+      51.25%, 73.75%  { opacity: 1; transform: translateY(0) }
+      75%, 100%       { opacity: 0; transform: translateY(-10px) }
+    }
+    @keyframes sc4 {
+      0%, 75%         { opacity: 0; transform: translateY(10px) }
+      76.25%, 98.75%  { opacity: 1; transform: translateY(0) }
+      100%            { opacity: 0; transform: translateY(-10px) }
+    }
+
+    /* ============ scene 1: the session ============ */
+    .shine { animation: shine 6s cubic-bezier(.65,0,.35,1) infinite }
+    @keyframes shine { 0%, 14% { transform: translateX(-250px) } 58%, 100% { transform: translateX(450px) } }
+
+    .sweepbar { animation: sweep 4s ease-in-out infinite }
+    @keyframes sweep {
+      0%   { transform: translateX(0); opacity: 0 }
+      12%  { opacity: .85 }
+      88%  { opacity: .85 }
+      100% { transform: translateX(680px); opacity: 0 }
+    }
+
+    .k1, .k2, .k3, .p1, .p2, .p3, .p4, .o1, .o2, .o3 {
+      animation-duration: 12s; animation-timing-function: linear; animation-iteration-count: infinite }
+    .k1 { animation-name: k1 } .k2 { animation-name: k2 } .k3 { animation-name: k3 }
+    @keyframes k1 {
+      0%, 4.17%      { width: 0; animation-timing-function: steps(34, end) }
+      14.17%, 99.5%  { width: 286px }
+      99.51%, 100%   { width: 0 }
+    }
+    @keyframes k2 {
+      0%, 20.83%     { width: 0; animation-timing-function: steps(33, end) }
+      32.5%, 99.5%   { width: 277px }
+      99.51%, 100%   { width: 0 }
+    }
+    @keyframes k3 {
+      0%, 39.17%     { width: 0; animation-timing-function: steps(31, end) }
+      49.17%, 99.5%  { width: 260px }
+      99.51%, 100%   { width: 0 }
+    }
+    .p1 { animation-name: p1 } .p2 { animation-name: p2 } .p3 { animation-name: p3 } .p4 { animation-name: p4 }
+    @keyframes p1 { 0%, 3.32%  { opacity: 0 } 3.33%, 99.5% { opacity: 1 } 99.51%, 100% { opacity: 0 } }
+    @keyframes p2 { 0%, 19.99% { opacity: 0 } 20%,   99.5% { opacity: 1 } 99.51%, 100% { opacity: 0 } }
+    @keyframes p3 { 0%, 38.32% { opacity: 0 } 38.33%,99.5% { opacity: 1 } 99.51%, 100% { opacity: 0 } }
+    @keyframes p4 { 0%, 54.99% { opacity: 0 } 55%,   99.5% { opacity: 1 } 99.51%, 100% { opacity: 0 } }
+    .o1 { animation-name: o1 } .o2 { animation-name: o2 } .o3 { animation-name: o3 }
+    @keyframes o1 { 0%, 16.67% { opacity: 0; transform: translateY(5px) } 18.7%, 99.5% { opacity: 1; transform: translateY(0) } 99.51%, 100% { opacity: 0 } }
+    @keyframes o2 { 0%, 35%    { opacity: 0; transform: translateY(5px) } 37%,   99.5% { opacity: 1; transform: translateY(0) } 99.51%, 100% { opacity: 0 } }
+    @keyframes o3 { 0%, 51.67% { opacity: 0; transform: translateY(5px) } 53.7%, 99.5% { opacity: 1; transform: translateY(0) } 99.51%, 100% { opacity: 0 } }
+
+    .caretwrap { animation: caretshow 12s linear infinite }
+    @keyframes caretshow { 0%, 4.1% { opacity: 0 } 4.17%, 99.5% { opacity: 1 } 99.51%, 100% { opacity: 0 } }
+    .caretmove { animation: caretmove 12s linear infinite }
+    @keyframes caretmove {
+      0%      { transform: translate(0,0);        animation-timing-function: steps(1, end) }
+      4.17%   { transform: translate(0,0);        animation-timing-function: steps(34, end) }
+      14.17%  { transform: translate(286px,0);    animation-timing-function: steps(1, end) }
+      20.83%  { transform: translate(0,48px);     animation-timing-function: steps(33, end) }
+      32.5%   { transform: translate(277px,48px); animation-timing-function: steps(1, end) }
+      39.17%  { transform: translate(0,96px);     animation-timing-function: steps(31, end) }
+      49.17%  { transform: translate(260px,96px); animation-timing-function: steps(1, end) }
+      55%     { transform: translate(0,144px) }
+      100%    { transform: translate(0,144px) }
+    }
+    .blink { animation: blink 1s steps(1, end) infinite }
+    @keyframes blink { 0%, 54% { opacity: 1 } 55%, 100% { opacity: 0 } }
+
+    /* ============ scene 2: gridpulse, hot and cold ============ */
+    /* micro-batch fill: accumulates to 5,000 rows, then flushes */
+    .batch { transform-box: fill-box; transform-origin: left center; animation: batch 4s cubic-bezier(.3,.7,.4,1) infinite }
+    @keyframes batch {
+      0%   { transform: scaleX(.04) }
+      74%  { transform: scaleX(1) }
+      80%  { transform: scaleX(.04) }
+      100% { transform: scaleX(.04) }
+    }
+    .flush { animation: flush 4s ease-out infinite }
+    @keyframes flush { 0%, 72% { opacity: 0 } 78% { opacity: 1 } 96%, 100% { opacity: 0 } }
+
+    /* in-order packets down the hot path */
+    .pk { animation-duration: 6s; animation-timing-function: cubic-bezier(.4,0,.3,1); animation-iteration-count: infinite }
+    .pk1 { animation-name: pk } .pk2 { animation-name: pk; animation-delay: .9s } .pk3 { animation-name: pk; animation-delay: 1.8s }
+    @keyframes pk {
+      0%   { transform: translateX(0); opacity: 0 }
+      5%   { opacity: 1 }
+      88%  { transform: translateX(560px); opacity: 1 }
+      94%, 100% { transform: translateX(560px); opacity: 0 }
+    }
+    /* the late packet: arrives out of order, gets held by the watermark, then admitted */
+    .late { animation: late 12s cubic-bezier(.4,0,.3,1) infinite }
+    @keyframes late {
+      0%, 30%   { transform: translateX(0); opacity: 0 }
+      33%       { opacity: 1 }
+      44%       { transform: translateX(232px) }
+      58%       { transform: translateX(232px) }
+      74%       { transform: translateX(560px); opacity: 1 }
+      79%, 100% { transform: translateX(560px); opacity: 0 }
+    }
+    .wm { animation: wm 12s ease-in-out infinite }
+    @keyframes wm { 0%, 42% { opacity: .25 } 50%, 58% { opacity: 1 } 70%, 100% { opacity: .25 } }
+    .heldlbl { animation: heldlbl 12s linear infinite }
+    @keyframes heldlbl { 0%, 45% { opacity: 0 } 49%, 60% { opacity: 1 } 64%, 100% { opacity: 0 } }
+
+    /* ============ scene 3: confine by subtraction ============ */
+    .row { animation-duration: 12s; animation-timing-function: linear; animation-iteration-count: infinite }
+    .r0 { animation-name: rw0 } .r1 { animation-name: rw1 } .r2 { animation-name: rw2 }
+    .r3 { animation-name: rw3 } .r4 { animation-name: rw4 }
+    @keyframes rw0 { 0%, 6%  { opacity: 0; transform: translateX(-8px) } 11%, 96% { opacity: 1; transform: translateX(0) } 99%, 100% { opacity: 0 } }
+    @keyframes rw1 { 0%, 11% { opacity: 0; transform: translateX(-8px) } 16%, 96% { opacity: 1; transform: translateX(0) } 99%, 100% { opacity: 0 } }
+    @keyframes rw2 { 0%, 16% { opacity: 0; transform: translateX(-8px) } 21%, 96% { opacity: 1; transform: translateX(0) } 99%, 100% { opacity: 0 } }
+    @keyframes rw3 { 0%, 21% { opacity: 0; transform: translateX(-8px) } 26%, 96% { opacity: 1; transform: translateX(0) } 99%, 100% { opacity: 0 } }
+    @keyframes rw4 { 0%, 26% { opacity: 0; transform: translateX(-8px) } 31%, 96% { opacity: 1; transform: translateX(0) } 99%, 100% { opacity: 0 } }
+    .deny { animation: deny 2s ease-in-out infinite }
+    @keyframes deny { 0%, 100% { opacity: .45 } 50% { opacity: 1 } }
+
+    /* ============ scene 4: cidra, verify before proposing ============ */
+    .scan { fill: none; stroke-width: 1.5; stroke-dasharray: 42 344; animation: scanr 3s linear infinite }
+    @keyframes scanr { to { stroke-dashoffset: -386 } }
+    .breathe { animation: breathe 3s ease-in-out infinite }
+    @keyframes breathe { 0%, 100% { opacity: .16 } 50% { opacity: .42 } }
+    /* the loop alternates: a fix that verifies, then one that does not */
+    .vpass { animation: vpass 12s linear infinite }
+    .vfail { animation: vfail 12s linear infinite }
+    @keyframes vpass { 0%, 49% { opacity: 1 } 50%, 96% { opacity: 0 } 97%, 100% { opacity: 1 } }
+    @keyframes vfail { 0%, 49% { opacity: 0 } 50%, 96% { opacity: 1 } 97%, 100% { opacity: 0 } }
+
+    /* ============ chrome labels + status, one per scene ============ */
+    .s1, .s2, .s3, .s4 { animation-duration: 48s; animation-timing-function: linear; animation-iteration-count: infinite }
+    .s1 { animation-name: st1 } .s2 { animation-name: st2 } .s3 { animation-name: st3 } .s4 { animation-name: st4 }
+    @keyframes st1 { 0% { opacity: 0 } 2%, 23% { opacity: 1 } 24%, 100% { opacity: 0 } }
+    @keyframes st2 { 0%, 26% { opacity: 0 } 27%, 48% { opacity: 1 } 49%, 100% { opacity: 0 } }
+    @keyframes st3 { 0%, 51% { opacity: 0 } 52%, 73% { opacity: 1 } 74%, 100% { opacity: 0 } }
+    @keyframes st4 { 0%, 76% { opacity: 0 } 77%, 98% { opacity: 1 } 99%, 100% { opacity: 0 } }
+
+    .live { animation: pulse 2s ease-in-out infinite }
+    @keyframes pulse { 0%, 100% { opacity: .35; r: 3.5px } 50% { opacity: 1; r: 4.5px } }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important }
+      .k1 { width: 286px } .k2 { width: 277px } .k3 { width: 260px }
+      .sc2, .sc3, .sc4, .s2, .s3, .s4, .vfail, .sweepbar, .shine { opacity: 0 }
+      .sc1, .s1, .caretwrap, .p1, .p2, .p3, .p4, .o1, .o2, .o3 { opacity: 1 }
+      .caretmove { transform: translate(0,144px) }
+      .batch { transform: scaleX(1) }
+    }
+  </style>
+
   <defs>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#1f6feb"/>
-      <stop offset="100%" stop-color="#1f6feb" stop-opacity="0"/>
+    <clipPath id="card"><rect width="900" height="420" rx="14"/></clipPath>
+    <pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse"><circle class="gdot" cx="1" cy="1" r="1"/></pattern>
+    <clipPath id="nameclip"><text class="name" x="32" y="132">abhishek kokadwar</text></clipPath>
+    <linearGradient id="shineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop class="sA" offset="0"   stop-color="#58a6ff" stop-opacity="0"/>
+      <stop class="sB" offset=".45" stop-color="#58a6ff" stop-opacity=".55"/>
+      <stop class="sC" offset=".5"  stop-color="#79c0ff" stop-opacity=".9"/>
+      <stop class="sD" offset=".55" stop-color="#58a6ff" stop-opacity=".55"/>
+      <stop class="sE" offset="1"   stop-color="#58a6ff" stop-opacity="0"/>
     </linearGradient>
-    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
-      <circle cx="1.5" cy="1.5" r="1" fill="#1b2430"/>
-    </pattern>
+    <marker id="ah" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+      <path class="head" d="M0,0 L8,4 L0,8 z"/>
+    </marker>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="9"/></filter>
   </defs>
 
-  <rect width="1000" height="300" rx="14" fill="#0d1117"/>
-  <rect width="1000" height="300" rx="14" fill="url(#dots)"/>
-  <rect x="0.5" y="0.5" width="999" height="299" rx="14" fill="none" stroke="#1f2733"/>
+  <rect class="bg" width="900" height="420" rx="14"/>
+  <g clip-path="url(#card)">
+    <g class="drift"><rect x="-52" y="-52" width="1004" height="524" fill="url(#grid)" opacity=".55"/></g>
+    <rect class="trace" x="1" y="1" width="898" height="418" rx="14"/>
+  </g>
+  <rect class="frame" x=".5" y=".5" width="899" height="419" rx="14"/>
 
-  <!-- title bar -->
-  <circle cx="34" cy="34" r="6" fill="#30363d"/>
-  <circle cx="54" cy="34" r="6" fill="#30363d"/>
-  <circle cx="74" cy="34" r="6" fill="#30363d"/>
-  <text x="104" y="39" fill="#6e7681" font-size="14">~/abhishek · zsh</text>
-  <text x="966" y="39" fill="#6e7681" font-size="14" text-anchor="end">identity</text>
+  <!-- persistent window chrome -->
+  <g class="boot">
+    <circle class="dot" cx="28" cy="30" r="5.5"/>
+    <circle class="dot" cx="47" cy="30" r="5.5"/>
+    <circle class="dot" cx="66" cy="30" r="5.5"/>
+    <text class="tiny" x="88" y="34">~/abhishek &#183; zsh</text>
+    <g>
+      <text class="tiny s1" x="868" y="34" text-anchor="end">identity</text>
+      <text class="tiny s2" x="868" y="34" text-anchor="end">gridpulse</text>
+      <text class="tiny s3" x="868" y="34" text-anchor="end">mcp-ztgateway</text>
+      <text class="tiny s4" x="868" y="34" text-anchor="end">cidra</text>
+    </g>
+    <line class="rule" x1="0" y1="56" x2="900" y2="56"/>
+  </g>
 
-  <!-- name -->
-  <text x="48" y="132" fill="#e6edf3" font-size="54" font-weight="700" letter-spacing="1">abhishek kokadwar</text>
-  <text x="52" y="164" fill="#8b949e" font-size="17" letter-spacing="2">data pipelines · backend · the boundaries between systems</text>
+  <!-- ==================== SCENE 1 : identity + session ==================== -->
+  <g class="sc sc1">
+    <text class="name" x="32" y="132">abhishek kokadwar</text>
+    <g clip-path="url(#nameclip)"><g class="shine"><rect x="0" y="90" width="220" height="56" fill="url(#shineGrad)"/></g></g>
+    <text class="sub" x="34" y="158">data pipelines &#183; backend &#183; the boundaries between systems</text>
 
-  <line x1="48" y1="190" x2="952" y2="190" stroke="#1f2733"/>
-  <line x1="620" y1="190" x2="820" y2="190" stroke="url(#accent)" stroke-width="2"/>
+    <line class="rule" x1="32" y1="180" x2="868" y2="180"/>
+    <g clip-path="url(#card)"><rect class="sweepbar" x="32" y="179" width="120" height="2"/></g>
 
-  <!-- terminal lines -->
-  <text x="48" y="224" fill="#3fb950" font-size="17">$</text>
-  <text x="74" y="224" fill="#e6edf3" font-size="17">spark-submit stream_processor/aggregate.py</text>
-  <text x="74" y="250" fill="#3fb950" font-size="16">ok</text>
-  <text x="104" y="250" fill="#8b949e" font-size="16">gridpulse · 42 meters · 19 buildings · sub-minute latency</text>
-  <text x="48" y="276" fill="#3fb950" font-size="17">$</text>
-  <text x="74" y="276" fill="#e6edf3" font-size="17">mcp-ztgateway</text>
-  <rect x="196" y="263" width="9" height="17" fill="#e6edf3" opacity="0.85"/>
+    <defs>
+      <clipPath id="c1"><rect class="k1" x="56" y="192" height="20" width="0"/></clipPath>
+      <clipPath id="c2"><rect class="k2" x="56" y="240" height="20" width="0"/></clipPath>
+      <clipPath id="c3"><rect class="k3" x="56" y="288" height="20" width="0"/></clipPath>
+    </defs>
 
-  <text x="952" y="276" fill="#6e7681" font-size="14" text-anchor="end">github.com/Abhishek86798</text>
+    <text class="pr p1" x="34" y="206">$</text>
+    <g clip-path="url(#c1)"><text class="cmd" x="56" y="206" textLength="286" lengthAdjust="spacingAndGlyphs">spark-submit stream/aggregate.py</text></g>
+    <g class="o1"><text class="out" x="56" y="230" textLength="512" lengthAdjust="spacingAndGlyphs"><tspan class="ok">ok</tspan>  gridpulse  42 meters &#183; 19 buildings &#183; sub-minute latency</text></g>
+
+    <text class="pr p2" x="34" y="254">$</text>
+    <g clip-path="url(#c2)"><text class="cmd" x="56" y="254" textLength="277" lengthAdjust="spacingAndGlyphs">mcp-ztgateway verify ./fs-server</text></g>
+    <g class="o2"><text class="out" x="56" y="278" textLength="497" lengthAdjust="spacingAndGlyphs"><tspan class="acc">583</tspan> rows &#183; 84.6% detection &#183; 100% containment &#183; 87.8% tox</text></g>
+
+    <text class="pr p3" x="34" y="302">$</text>
+    <g clip-path="url(#c3)"><text class="cmd" x="56" y="302" textLength="260" lengthAdjust="spacingAndGlyphs">cidra diagnose --verify-fix</text></g>
+    <g class="o3"><text class="out" x="56" y="326" textLength="470" lengthAdjust="spacingAndGlyphs"><tspan class="acc">53</tspan> runs &#183; 100% tier-1/2 &#183; zero false verified claims</text></g>
+
+    <text class="pr p4" x="34" y="350">$</text>
+    <g class="caretwrap"><g class="caretmove"><rect class="caret blink" x="56" y="194" width="9" height="16" rx="1"/></g></g>
+  </g>
+
+  <!-- ==================== SCENE 2 : gridpulse, hot and cold ==================== -->
+  <g class="sc sc2">
+    <text class="h1" x="32" y="100">gridpulse<tspan class="h2"> / meter to dashboard</tspan></text>
+
+    <!-- the JDBC micro-batch filling to 5,000 rows and flushing every 15s -->
+    <text class="lbl" x="32"  y="132">jdbc micro-batch</text>
+    <rect class="track" x="32" y="140" width="248" height="6" rx="3"/>
+    <rect class="acc batch" x="32" y="140" width="248" height="6" rx="3"/>
+    <text class="lbl flush" x="292" y="145"><tspan class="ok">flush</tspan> 5,000 rows / 15s</text>
+
+    <!-- lanes -->
+    <rect class="bx" x="40" y="182" width="118" height="56" rx="8"/>
+    <text class="bxt" x="99" y="205" text-anchor="middle">42 meters</text>
+    <text class="bxs" x="99" y="221" text-anchor="middle">kafka, keyed</text>
+
+    <line class="wire" x1="158" y1="210" x2="515" y2="210"/>
+    <line class="wire" x1="549" y1="210" x2="724" y2="210" marker-end="url(#ah)"/>
+    <line class="wire" x1="158" y1="290" x2="724" y2="290" marker-end="url(#ah)" stroke-dasharray="5 4"/>
+
+    <g class="wm">
+      <rect class="bx" x="515" y="188" width="34" height="44" rx="6"/>
+      <line x1="532" y1="196" x2="532" y2="224" stroke="#58a6ff" stroke-width="2"/>
+    </g>
+    <text class="lbl" x="532" y="250" text-anchor="middle">watermark</text>
+    <text class="lbl heldlbl" x="532" y="170" text-anchor="middle"><tspan class="warn">held</tspan> 2 min</text>
+
+    <rect class="bx" x="732" y="182" width="128" height="56" rx="8"/>
+    <text class="bxt" x="796" y="205" text-anchor="middle">postgres</text>
+    <text class="bxs" x="796" y="221" text-anchor="middle">hot &#183; queryable</text>
+
+    <rect class="bx" x="732" y="262" width="128" height="56" rx="8"/>
+    <text class="bxt" x="796" y="285" text-anchor="middle">parquet</text>
+    <text class="bxs" x="796" y="301" text-anchor="middle">cold &#183; y/m/d</text>
+
+    <circle class="acc pk pk1" cx="165" cy="210" r="4"/>
+    <circle class="acc pk pk2" cx="165" cy="210" r="4"/>
+    <circle class="acc pk pk3" cx="165" cy="210" r="4"/>
+    <circle class="warn late"  cx="165" cy="210" r="5"/>
+    <circle class="acc pk pk2" cx="165" cy="290" r="4"/>
+
+    <text class="cap" x="32" y="352">a packet four minutes late is held by the watermark, not silently averaged in</text>
+  </g>
+
+  <!-- ==================== SCENE 3 : confine by subtraction ==================== -->
+  <g class="sc sc3">
+    <text class="h1" x="32" y="100">mcp-ztgateway<tspan class="h2"> / confine</tspan></text>
+
+    <text class="lbl" x="60"  y="136">OBSERVED under strace</text>
+    <text class="lbl" x="352" y="136">DECLARED by the server</text>
+    <text class="lbl" x="644" y="136">SECCOMP FILTER</text>
+    <line class="rule" x1="60" y1="146" x2="292" y2="146"/>
+    <line class="rule" x1="352" y1="146" x2="584" y2="146"/>
+    <line class="rule" x1="644" y1="146" x2="868" y2="146"/>
+
+    <g class="row r0">
+      <text class="mono" x="60"  y="176">openat</text>
+      <text class="mono" x="352" y="176">openat</text>
+      <text class="mono" x="644" y="176"><tspan class="ok">allow</tspan>  openat</text>
+    </g>
+    <g class="row r1">
+      <text class="mono" x="60"  y="200">read</text>
+      <text class="mono" x="352" y="200">read</text>
+      <text class="mono" x="644" y="200"><tspan class="ok">allow</tspan>  read</text>
+    </g>
+    <g class="row r2">
+      <text class="mono" x="60"  y="224">write</text>
+      <text class="mono" x="352" y="224">write</text>
+      <text class="mono" x="644" y="224"><tspan class="ok">allow</tspan>  write</text>
+    </g>
+    <g class="row r3">
+      <text class="mono" x="60"  y="248">socket</text>
+      <text class="cap"  x="352" y="248">not declared</text>
+      <text class="mono deny" x="644" y="248"><tspan class="warn">DENY</tspan>   socket</text>
+    </g>
+    <g class="row r4">
+      <text class="mono" x="60"  y="272">connect</text>
+      <text class="cap"  x="352" y="272">not declared</text>
+      <text class="mono deny" x="644" y="272"><tspan class="warn">DENY</tspan>   connect</text>
+    </g>
+
+    <text class="cap" x="60" y="310">the filter is what is left after subtracting the declaration from what the server actually did</text>
+    <line class="rule" x1="60" y1="326" x2="868" y2="326"/>
+    <text class="lbl" x="60" y="350">84.6% runtime defence <tspan class="cap">&#183;</tspan> 100% containment <tspan class="cap">&#183;</tspan> 87.8% on MCPTox <tspan class="cap">across</tspan> 583 rows</text>
+  </g>
+
+  <!-- ==================== SCENE 4 : cidra, verify before proposing ==================== -->
+  <g class="sc sc4">
+    <text class="h1" x="32" y="100">cidra<tspan class="h2"> / diagnose, reproduce, verify</tspan></text>
+
+    <line class="wire" x1="210" y1="176" x2="292" y2="176" marker-end="url(#ah)"/>
+    <line class="wire" x1="450" y1="176" x2="532" y2="176" marker-end="url(#ah)"/>
+    <path class="wire" d="M375,202 V252" marker-end="url(#ah)" stroke-dasharray="4 4"/>
+    <path class="wire" d="M615,202 V284 H458" marker-end="url(#ah)" stroke-dasharray="4 4"/>
+
+    <rect class="bx" x="60"  y="150" width="150" height="52" rx="8"/>
+    <text class="bxt" x="135" y="172" text-anchor="middle">failing run</text>
+    <text class="bxs" x="135" y="188" text-anchor="middle">github actions</text>
+
+    <rect class="bx" x="300" y="150" width="150" height="52" rx="8"/>
+    <text class="bxt" x="375" y="172" text-anchor="middle">langgraph</text>
+    <text class="bxs" x="375" y="188" text-anchor="middle">diagnoses cause</text>
+
+    <rect class="bx" x="540" y="150" width="150" height="52" rx="8"/>
+    <text class="bxt" x="615" y="172" text-anchor="middle">candidate fix</text>
+    <text class="bxs" x="615" y="188" text-anchor="middle">pydantic-validated</text>
+
+    <rect class="vio breathe" x="294" y="252" width="162" height="64" rx="12" filter="url(#soft)"/>
+    <rect class="bx" x="300" y="258" width="150" height="52" rx="8"/>
+    <rect class="scan" stroke="#a371f7" x="300" y="258" width="150" height="52" rx="8"/>
+    <text class="bxt" x="375" y="280" text-anchor="middle">sandbox</text>
+    <text class="bxs" x="375" y="296" text-anchor="middle">reproduces first</text>
+
+    <circle class="acc" r="3.5" opacity="0">
+      <animateMotion dur="2.4s" repeatCount="indefinite" path="M210,176 H292"/>
+      <animate attributeName="opacity" dur="2.4s" repeatCount="indefinite" values="0;1;1;0" keyTimes="0;.18;.82;1"/>
+    </circle>
+    <circle class="acc" r="3.5" opacity="0">
+      <animateMotion dur="2.4s" begin="1.2s" repeatCount="indefinite" path="M450,176 H532"/>
+      <animate attributeName="opacity" dur="2.4s" begin="1.2s" repeatCount="indefinite" values="0;1;1;0" keyTimes="0;.18;.82;1"/>
+    </circle>
+    <circle class="vio" r="3.5" opacity="0">
+      <animateMotion dur="3s" repeatCount="indefinite" path="M375,202 V252"/>
+      <animate attributeName="opacity" dur="3s" repeatCount="indefinite" values="0;1;1;0" keyTimes="0;.12;.88;1"/>
+    </circle>
+    <circle class="vio" r="3.5" opacity="0">
+      <animateMotion dur="3s" begin="1.5s" repeatCount="indefinite" path="M615,202 V284 H458"/>
+      <animate attributeName="opacity" dur="3s" begin="1.5s" repeatCount="indefinite" values="0;1;1;0" keyTimes="0;.12;.88;1"/>
+    </circle>
+
+    <g>
+      <text class="lbl" x="730" y="250">53+ tests</text>
+      <text class="lbl" x="730" y="272">100% tier-1/2</text>
+      <text class="lbl" x="730" y="294">bounded retry</text>
+    </g>
+
+    <g class="vpass">
+      <circle class="ok" cx="34" cy="340" r="4"/>
+      <text class="mono" x="48" y="344"><tspan class="ok">verified</tspan><tspan class="cap">  the fix reproduced green in the sandbox, so it ships</tspan></text>
+    </g>
+    <g class="vfail">
+      <circle class="warn" cx="34" cy="340" r="4"/>
+      <text class="mono" x="48" y="344"><tspan class="warn">withheld</tspan><tspan class="cap">  it could not be verified, so it is not proposed at all</tspan></text>
+    </g>
+  </g>
+
+  <!-- persistent status strip -->
+  <g transform="translate(32,398)">
+   <g class="boot">
+    <circle class="live" cx="4" cy="-4" r="4" fill="#3fb950"/>
+    <text class="tiny s1" x="20" y="0">python &#183; kafka &#183; spark &#183; postgres &#183; seccomp</text>
+    <text class="tiny s2" x="20" y="0">hot path buys freshness, cold path buys history, neither pays for the other</text>
+    <text class="tiny s3" x="20" y="0">a capability claim is not a fact until the kernel agrees</text>
+    <text class="tiny s4" x="20" y="0">an unverified fix is worse than no fix</text>
+    <text class="tiny" x="836" y="0" text-anchor="end">github.com/Abhishek86798</text>
+   </g>
+  </g>
 </svg>

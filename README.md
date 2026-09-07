@@ -152,7 +152,7 @@ The most consistent thing I do — 306 active days, and the reason a cost-per-op
 
 <br/>
 
-<sub>1,000+ across <a href="https://leetcode.com/u/abhiii1005_/">LeetCode</a> (top 17%), <a href="https://www.geeksforgeeks.org/profile/abhi_iiitm">GeeksforGeeks</a>, <a href="https://www.naukri.com/code360/profile/1d0eab26-a66e-4d90-99ed-46328d444eab">Code360</a> (2x monthly topper) and CodeChef · tracked on <a href="https://codolio.com/profile/abhishek_1005">Codolio</a></sub>
+<sub>across <a href="https://leetcode.com/u/abhiii1005_/">LeetCode</a> (top 17%), <a href="https://www.geeksforgeeks.org/profile/abhi_iiitm">GeeksforGeeks</a>, <a href="https://www.naukri.com/code360/profile/1d0eab26-a66e-4d90-99ed-46328d444eab">Code360</a> (4x monthly topper) and CodeChef · rating and difficulty split fetched live · totals tracked on <a href="https://codolio.com/profile/abhishek_1005">Codolio</a></sub>
 
 </div>
 
@@ -204,16 +204,11 @@ Also contributing through **GSSoC**, and a published inference model on [Hugging
 
 <div align="center">
 
-<img height="150" src="https://github-readme-stats.vercel.app/api?username=Abhishek86798&show_icons=true&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=8b949e&count_private=true" />
-<img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abhishek86798&layout=compact&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=8b949e&hide=html%2Cjupyter%20notebook&langs_count=6" />
+<img src="https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/main/assets/github.svg" width="92%" alt="GitHub contributions, commits, merged PRs, public repos and stars, with a language share bar" />
 
 <br/><br/>
 
-<img width="98%" src="https://streak-stats.demolab.com?user=Abhishek86798&hide_border=true&background=0d1117&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff&sideLabels=8b949e&dates=6e7681" alt="contribution streak" />
-
-<br/><br/>
-
-<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=Abhishek86798&bg_color=0d1117&color=e6edf3&line=58a6ff&point=58a6ff&area=true&area_color=1f6feb&hide_border=true" alt="contribution heatmap" />
+<img width="92%" src="https://streak-stats.demolab.com?user=Abhishek86798&hide_border=true&background=0d1117&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff&sideLabels=8b949e&dates=6e7681" alt="contribution streak" />
 
 <br/><br/>
 

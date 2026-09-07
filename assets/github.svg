@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 176" width="900" height="176" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <rect width="900" height="176" rx="12" fill="#0d1117"/>
+  <rect x="0.5" y="0.5" width="899" height="175" rx="12" fill="none" stroke="#1f2733"/>
+
+  <text x="36" y="42" fill="#8b949e" font-size="13" font-weight="700" letter-spacing="2">GITHUB</text>
+  <text x="864" y="42" fill="#6e7681" font-size="12" text-anchor="end">last 12 months &#183; rebuilt nightly</text>
+  <line x1="36" y1="58" x2="864" y2="58" stroke="#1f2733"/>
+
+  <text x="36" y="100" fill="#e6edf3" font-size="30" font-weight="700">466</text>
+  <text x="36" y="120" fill="#6e7681" font-size="11">contributions</text>
+
+  <text x="212" y="100" fill="#e6edf3" font-size="30" font-weight="700">369</text>
+  <text x="212" y="120" fill="#6e7681" font-size="11">commits</text>
+
+  <text x="388" y="100" fill="#58a6ff" font-size="30" font-weight="700">26</text>
+  <text x="388" y="120" fill="#6e7681" font-size="11">merged PRs</text>
+
+  <text x="564" y="100" fill="#e6edf3" font-size="30" font-weight="700">43</text>
+  <text x="564" y="120" fill="#6e7681" font-size="11">public repos</text>
+
+  <text x="740" y="100" fill="#e6edf3" font-size="30" font-weight="700">3</text>
+  <text x="740" y="120" fill="#6e7681" font-size="11">stars earned</text>
+
+  <line x1="36" y1="138" x2="864" y2="138" stroke="#1f2733"/>
+  <rect x="36.0" y="150" width="378.4" height="6" rx="3" fill="#3178c6"/>
+  <rect x="416.4" y="150" width="177.0" height="6" rx="3" fill="#3572A5"/>
+  <rect x="595.5" y="150" width="109.9" height="6" rx="3" fill="#e34c26"/>
+  <rect x="707.4" y="150" width="87.5" height="6" rx="3" fill="#DA5B0B"/>
+  <rect x="796.9" y="150" width="65.1" height="6" rx="3" fill="#f1e05a"/>
+  <text x="36" y="172" fill="#6e7681" font-size="10">TypeScript 17  Python 8  HTML 5  Jupyter Notebook 4  JavaScript 3</text>
+</svg>
