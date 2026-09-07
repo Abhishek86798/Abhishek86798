@@ -10,6 +10,10 @@
 [![PyPI](https://img.shields.io/badge/pypi-0d1117?style=flat-square&logo=pypi&logoColor=white&labelColor=0d1117)](https://pypi.org/project/mcp-ztgateway/)
 [![Medium](https://img.shields.io/badge/medium-0d1117?style=flat-square&logo=medium&logoColor=white&labelColor=0d1117)](https://medium.com/@abhikokadwar2)
 
+<br/>
+
+[![Resume](https://img.shields.io/badge/download%20résumé-1f6feb?style=for-the-badge&logo=readdotcv&logoColor=white&labelColor=0d1117)](https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/main/assets/abhishek-kokadwar-resume.pdf)
+
 </div>
 
 <br/>
@@ -80,13 +84,17 @@ A **LangGraph** pipeline that reads a failing GitHub Actions run, works out why,
 
 <img src="https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/main/assets/h-exp.svg" width="100%" alt="Experience" />
 
-**Trionix** · software development intern · *sole developer*
+Two internships, sole developer on both, and both shipped to a live domain — which is a different kind of pressure than a repo nobody deploys.
 
-Owned the build end to end — schema through deployment. PostgreSQL data modelling with Row-Level Security, so tenant isolation is a database guarantee rather than a `WHERE` clause somebody has to remember. Being the only developer meant every design decision was also mine to live with two weeks later, which is a faster teacher than any code review.
+<!-- TODO: replace the role titles and dates below with the exact lines from your résumé. -->
 
-**Bizzkonnect** · software development intern · *sole developer*
+**Trionix** · software development intern · *sole developer* — [saaro-creations.vercel.app →](https://saaro-creations.vercel.app/)
 
-Same shape, different domain. Backend services and data plumbing, and the first time a design mistake of mine had actual users attached to it. That's the part that stuck.
+Owned the build end to end, schema through deployment. PostgreSQL data modelling with Row-Level Security, so tenant isolation is a database guarantee rather than a `WHERE` clause somebody has to remember. Being the only developer meant every design decision was also mine to live with two weeks later, which is a faster teacher than any code review.
+
+**Higigai** · software development intern · *sole developer* — [tridentpublicschool.com →](https://www.tridentpublicschool.com/)
+
+A production site for a real school, with real people typing into it on a Monday morning. First time a design mistake of mine had users attached to it. That's the part that stuck.
 
 <img src="https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/main/assets/rule.svg" width="100%" alt="" />
 
@@ -98,7 +106,7 @@ Same shape, different domain. Backend services and data plumbing, and the first 
 <tr><td><b>late 2024</b></td><td>C++ and OOP. Implemented the core data structures myself rather than importing them, which is where most of my instinct for cost per operation came from.</td></tr>
 <tr><td><b>early 2025</b></td><td>Moved to Python — PyTorch, NLP, first RAG experiments and transformer pipelines.</td></tr>
 <tr><td><b>mid 2025</b></td><td>Built <b>AyuSynapse</b> solo at a healthcare AI hackathon: FHIR EMR parsing into BioBERT NER into ChromaDB, matching patients to clinical trials in a 36-hour sprint.</td></tr>
-<tr><td><b>late 2025</b></td><td>Internships at Trionix and Bizzkonnect, sole developer on both. Postgres schemas, Row-Level Security, real users.</td></tr>
+<tr><td><b>late 2025</b></td><td>Internships at Trionix and Higigai, sole developer on both. Postgres schemas, Row-Level Security, two sites live on real domains.</td></tr>
 <tr><td><b>now</b></td><td>Streaming data and trust boundaries. <b>GridPulse</b> on Kafka and Spark, the <b>MCP gateway</b> on seccomp, <b>CIDRA</b> on LangGraph — and DSA most days.</td></tr>
 </table>
 
@@ -106,15 +114,15 @@ Same shape, different domain. Backend services and data plumbing, and the first 
 
 <img src="https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/main/assets/h-dsa.svg" width="100%" alt="DSA" />
 
-The most consistent thing I do. 852 problems, most days, for long enough that the C++ years and the "cost per operation" instinct above are the same story.
+The most consistent thing I do. 306 active days, for long enough that the C++ years and the "cost per operation" instinct above are the same story.
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/main/assets/dsa.svg" width="92%" alt="LeetCode 393 medium and 55 hard at contest rating 1612, GeeksforGeeks 260+, Code360 100+ with 2x monthly topper — 852 total" />
+<img src="https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/main/assets/dsa.svg" width="92%" alt="859 solved, LeetCode contest rating 1640, 29 contests, 273 easy / 399 medium / 55 hard" />
 
 <br/>
 
-<sub><a href="https://leetcode.com/u/abhiii1005_/">LeetCode</a> · <a href="https://www.geeksforgeeks.org/profile/abhi_iiitm">GeeksforGeeks</a> · <a href="https://www.naukri.com/code360/profile/1d0eab26-a66e-4d90-99ed-46328d444eab">Code360</a> · all of it tracked on <a href="https://codolio.com/profile/abhishek_1005">Codolio</a></sub>
+<sub>across <a href="https://leetcode.com/u/abhiii1005_/">LeetCode</a>, <a href="https://www.geeksforgeeks.org/profile/abhi_iiitm">GeeksforGeeks</a>, <a href="https://www.naukri.com/code360/profile/1d0eab26-a66e-4d90-99ed-46328d444eab">Code360</a> and CodeChef · tracked on <a href="https://codolio.com/profile/abhishek_1005">Codolio</a></sub>
 
 </div>
 

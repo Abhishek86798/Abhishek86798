@@ -38,7 +38,7 @@ HEADERS = [
     ("h-path",   "how i got here",      "2023 → now"),
     ("h-oss",    "open source",         "early days"),
     ("h-stack",  "stack",               "what i reach for"),
-    ("h-dsa",    "dsa",                 "852 solved"),
+    ("h-dsa",    "dsa",                 "859 solved · 306 active days"),
     ("h-lately", "lately",              "contribution activity"),
 ]
 
