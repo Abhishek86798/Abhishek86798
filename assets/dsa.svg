@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="900" height="300" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <defs>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1f6feb"/>
+      <stop offset="100%" stop-color="#58a6ff"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="300" rx="12" fill="#0d1117"/>
+  <rect x="0.5" y="0.5" width="899" height="299" rx="12" fill="none" stroke="#1f2733"/>
+
+  <text x="36" y="46" fill="#8b949e" font-size="14" font-weight="700" letter-spacing="2">DSA</text>
+  <text x="864" y="46" fill="#1f6feb" font-size="13" text-anchor="end">852 solved, tracked in one place</text>
+  <line x1="36" y1="62" x2="864" y2="62" stroke="#1f2733"/>
+
+  <text x="36" y="96" fill="#6e7681" font-size="13" letter-spacing="1">LEETCODE</text>
+  <text x="864" y="96" fill="#e6edf3" font-size="13" text-anchor="end">393 medium &#183; 55 hard</text>
+  <rect x="36" y="106" width="828" height="7" rx="3.5" fill="#161d27"/>
+  <rect x="36" y="106" width="580" height="7" rx="3.5" fill="url(#bar)"/>
+
+  <text x="36" y="146" fill="#6e7681" font-size="13" letter-spacing="1">GEEKSFORGEEKS</text>
+  <text x="864" y="146" fill="#e6edf3" font-size="13" text-anchor="end">260+ solved</text>
+  <rect x="36" y="156" width="828" height="7" rx="3.5" fill="#161d27"/>
+  <rect x="36" y="156" width="384" height="7" rx="3.5" fill="url(#bar)"/>
+
+  <text x="36" y="196" fill="#6e7681" font-size="13" letter-spacing="1">CODE360</text>
+  <text x="864" y="196" fill="#e6edf3" font-size="13" text-anchor="end">100+ solved &#183; 2x monthly topper</text>
+  <rect x="36" y="206" width="828" height="7" rx="3.5" fill="#161d27"/>
+  <rect x="36" y="206" width="148" height="7" rx="3.5" fill="url(#bar)"/>
+
+  <line x1="36" y1="240" x2="864" y2="240" stroke="#1f2733"/>
+
+  <rect x="36" y="256" width="150" height="26" rx="13" fill="#0f151d" stroke="#26303c"/>
+  <text x="111" y="273" fill="#8b949e" font-size="12" text-anchor="middle">contest rating 1612</text>
+
+  <rect x="196" y="256" width="128" height="26" rx="13" fill="#0f151d" stroke="#26303c"/>
+  <text x="260" y="273" fill="#8b949e" font-size="12" text-anchor="middle">most days, still</text>
+
+  <text x="864" y="273" fill="#6e7681" font-size="12" text-anchor="end">codolio.com/profile/abhishek_1005</text>
+</svg>

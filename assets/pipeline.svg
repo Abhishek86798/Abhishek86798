@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" width="1000" height="420" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#30363d"/>
+    </marker>
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1" fill="#161d27"/>
+    </pattern>
+  </defs>
+
+  <rect width="1000" height="420" rx="14" fill="#0d1117"/>
+  <rect width="1000" height="420" rx="14" fill="url(#dots)"/>
+  <rect x="0.5" y="0.5" width="999" height="419" rx="14" fill="none" stroke="#1f2733"/>
+
+  <circle cx="34" cy="30" r="6" fill="#30363d"/>
+  <circle cx="54" cy="30" r="6" fill="#30363d"/>
+  <circle cx="74" cy="30" r="6" fill="#30363d"/>
+  <text x="104" y="35" fill="#6e7681" font-size="13">~/gridpulse &#183; zsh</text>
+  <text x="966" y="35" fill="#6e7681" font-size="13" text-anchor="end">gridpulse</text>
+
+  <text x="40" y="82" fill="#1f6feb" font-size="18" font-weight="700">gridpulse</text>
+  <text x="152" y="82" fill="#8b949e" font-size="18">/ meter to dashboard</text>
+
+  <rect x="40" y="112" width="150" height="66" rx="8" fill="#0f151d" stroke="#26303c"/>
+  <text x="115" y="140" fill="#e6edf3" font-size="14" font-weight="700" text-anchor="middle">42 meters</text>
+  <text x="115" y="160" fill="#6e7681" font-size="12" text-anchor="middle">19 buildings</text>
+
+  <line x1="190" y1="145" x2="252" y2="145" stroke="#30363d" stroke-width="1.5" marker-end="url(#ar)"/>
+
+  <rect x="258" y="112" width="164" height="66" rx="8" fill="#0f151d" stroke="#26303c"/>
+  <text x="340" y="140" fill="#e6edf3" font-size="14" font-weight="700" text-anchor="middle">kafka</text>
+  <text x="340" y="160" fill="#6e7681" font-size="12" text-anchor="middle">kraft &#183; keyed by meter</text>
+
+  <line x1="422" y1="145" x2="484" y2="145" stroke="#30363d" stroke-width="1.5" marker-end="url(#ar)"/>
+
+  <rect x="490" y="112" width="186" height="66" rx="8" fill="#0f151d" stroke="#26303c"/>
+  <text x="583" y="140" fill="#e6edf3" font-size="14" font-weight="700" text-anchor="middle">spark streaming</text>
+  <text x="583" y="160" fill="#6e7681" font-size="12" text-anchor="middle">5m window &#183; 1m slide</text>
+
+  <line x1="583" y1="178" x2="583" y2="206" stroke="#26303c" stroke-dasharray="3 3"/>
+  <text x="583" y="222" fill="#6e7681" font-size="12" text-anchor="middle">2-minute event-time watermark</text>
+
+  <path d="M676 145 L716 145 L716 268" fill="none" stroke="#30363d" stroke-width="1.5"/>
+  <path d="M716 145 L760 145" fill="none" stroke="#30363d" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M716 268 L760 268" fill="none" stroke="#30363d" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#ar)"/>
+
+  <rect x="766" y="112" width="194" height="66" rx="8" fill="#0f151d" stroke="#1f6feb"/>
+  <text x="863" y="140" fill="#e6edf3" font-size="14" font-weight="700" text-anchor="middle">postgres</text>
+  <text x="863" y="160" fill="#6e7681" font-size="12" text-anchor="middle">hot &#183; batch 5k / 15s</text>
+
+  <rect x="766" y="235" width="194" height="66" rx="8" fill="#0f151d" stroke="#26303c"/>
+  <text x="863" y="263" fill="#e6edf3" font-size="14" font-weight="700" text-anchor="middle">parquet</text>
+  <text x="863" y="283" fill="#6e7681" font-size="12" text-anchor="middle">cold &#183; y/m/d partitions</text>
+
+  <path d="M863 178 L863 322" fill="none" stroke="#30363d" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="766" y="328" width="194" height="52" rx="8" fill="#0f151d" stroke="#26303c"/>
+  <text x="863" y="359" fill="#e6edf3" font-size="13" text-anchor="middle">streamlit &#183; 3s fragments</text>
+
+  <text x="40" y="268" fill="#8b949e" font-size="13">the split is the whole point:</text>
+  <text x="40" y="292" fill="#6e7681" font-size="13">freshness is bought with batch size,</text>
+  <text x="40" y="314" fill="#6e7681" font-size="13">history is bought with partitioning,</text>
+  <text x="40" y="336" fill="#6e7681" font-size="13">and neither one pays for the other.</text>
+
+  <circle cx="46" cy="379" r="4" fill="#3fb950"/>
+  <text x="60" y="384" fill="#8b949e" font-size="13">sub-minute meter-to-queryable-table latency</text>
+</svg>

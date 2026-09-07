@@ -22,19 +22,23 @@ So now I spend most of my time on **data in motion** and on **trust boundaries**
 
 The habit I'm trying to build is measuring the thing rather than assuming it. It's easy to write "real-time" in a README. It's harder to say what the watermark is, what happens to the packet that arrives four minutes late, and what the number looks like when you go back and check it.
 
----
+<img src="https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/main/assets/rule.svg" width="100%" alt="" />
 
-## What I'm working on
+<img src="https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/main/assets/h-built.svg" width="100%" alt="Things I've built" />
 
 ### GridPulse — real-time IoT energy streaming
 
 Live electrical telemetry from **42 smart sub-meters** across **19 campus buildings**, ingested, aggregated and served.
 
-The pipeline is deliberately boring in shape and specific in its choices. A Python simulator produces per-meter readings into a containerized **Kafka** cluster running in KRaft mode, partitioned by meter ID so a single meter's events stay strictly ordered while different meters process in parallel. A **Spark Structured Streaming** job consumes the raw topic under a 5-minute sliding window with a 1-minute slide, and a 2-minute event-time watermark, because sensor packets do not arrive in the order they were measured and pretending otherwise gives you clean-looking numbers that are wrong.
+The pipeline is deliberately boring in shape and specific in its choices. A Python simulator produces per-meter readings into a containerized **Kafka** cluster in KRaft mode, partitioned by meter ID so a single meter's events stay strictly ordered while different meters process in parallel. A **Spark Structured Streaming** job consumes the raw topic under a 5-minute sliding window with a 1-minute slide and a 2-minute event-time watermark — because sensor packets do not arrive in the order they were measured, and pretending otherwise gives you clean-looking numbers that are wrong.
 
-Storage splits two ways. Hot path: aggregates land in **PostgreSQL** through tuned JDBC micro-batches — batch size 5,000, 15-second trigger — which is a deliberate trade of connection overhead against freshness, and holds sub-minute latency from meter to queryable table. Cold path: raw telemetry writes to **Parquet partitioned by year/month/day**, so the full history stays cheap to scan later instead of bloating the operational store.
+<div align="center">
 
-A **Streamlit** dashboard reads the hot path with fragment-scoped polling, refreshing live aggregates every 3 seconds without re-rendering the layout around them.
+<img src="https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/main/assets/pipeline.svg" width="100%" alt="Meters into Kafka into Spark Structured Streaming, then forking into a hot path to Postgres and a cold path to date-partitioned Parquet, with a Streamlit dashboard reading the hot path." />
+
+</div>
+
+Storage splits two ways, and the split is the design. Hot path: aggregates land in **PostgreSQL** through tuned JDBC micro-batches — batch size 5,000, 15-second trigger — a deliberate trade of connection overhead against freshness that holds sub-minute latency from meter to queryable table. Cold path: raw telemetry writes to **Parquet partitioned by year/month/day**, so the full history stays cheap to scan later instead of bloating the operational store. A **Streamlit** dashboard reads the hot path with fragment-scoped polling, refreshing live aggregates every 3 seconds without re-rendering the layout around them.
 
 `kafka` · `spark structured streaming` · `pyspark` · `postgres` · `parquet` · `docker` · `streamlit`
 
@@ -46,7 +50,13 @@ A **Streamlit** dashboard reads the hot path with fragment-scoped polling, refre
 
 An MCP tool server describes its own capabilities. That description is a claim, not a fact, and the gateway treats it that way: **declare, verify, confine.**
 
-Each server is profiled under `strace` in a locked-down container, the observed syscalls are checked against what the server declared, and the verified result is compiled into a per-tool **seccomp-BPF** filter. Anything outside the declaration is denied at the kernel boundary, not by application code that can be talked out of it. Provenance gating on tool-call arguments and per-call manifest re-attestation close CVE-2025-54136.
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/main/assets/gateway.svg" width="100%" alt="Declared capabilities compared against syscalls observed under strace in a locked-down container, compiled into a per-tool seccomp-BPF filter that denies anything outside the declaration at the kernel boundary." />
+
+</div>
+
+Each server is profiled under `strace` in a `--cap-drop ALL --read-only` container, the observed syscalls are checked against what the server declared, and the verified result is compiled into a per-tool **seccomp-BPF** filter. Anything outside the declaration is denied at the kernel boundary, not by application code that can be talked out of it. Provenance gating on tool-call arguments and per-call manifest re-attestation close CVE-2025-54136.
 
 The part I'd defend in an interview isn't the enforcement, it's the evaluation. A 7-corpus, 583-row harness that separates *detection* from *containment*, because a gateway that notices an attack and doesn't stop it deserves a different number than one that stops it. 84.6% runtime defence, 100% containment, 87.8% on MCPTox.
 
@@ -66,52 +76,65 @@ A **LangGraph** pipeline that reads a failing GitHub Actions run, works out why,
 
 [Repo →](https://github.com/Abhishek86798/CIDRA)
 
----
+<img src="https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/main/assets/rule.svg" width="100%" alt="" />
 
-### Trinetra — parking violation prediction
+<img src="https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/main/assets/h-exp.svg" width="100%" alt="Experience" />
 
-Built for the Flipkart Gridlock hackathon, aimed at Bangalore Traffic Police: given where and when violations have happened before, predict where enforcement should go next.
+**Trionix** · software development intern · *sole developer*
 
-The modelling problem is more about the join than the model. Violation records, geospatial zones and time-of-day buckets have to line up before anything downstream means much, and most of the work was getting that feature table honest — deduplicating locations that appear under three spellings, and resisting the urge to read a hotspot into what is really just a place with more reporting. The output is served as a REST inference API with a Next.js dashboard on top, so the prediction lands somewhere a non-technical user can act on it.
+Owned the build end to end — schema through deployment. PostgreSQL data modelling with Row-Level Security, so tenant isolation is a database guarantee rather than a `WHERE` clause somebody has to remember. Being the only developer meant every design decision was also mine to live with two weeks later, which is a faster teacher than any code review.
 
-Top 5% in the hackathon.
+**Bizzkonnect** · software development intern · *sole developer*
 
-`python` · `scikit-learn` · `fastapi` · `next.js` · `vercel`
+Same shape, different domain. Backend services and data plumbing, and the first time a design mistake of mine had actual users attached to it. That's the part that stuck.
 
-[Live demo →](https://gridlockl-fugg.vercel.app)
+<img src="https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/main/assets/rule.svg" width="100%" alt="" />
 
-<!-- Add one line here naming the model you actually used and roughly how it scored.
-     Even a modest number beats none — it's the difference between "I trained a model"
-     and "I know how well it worked." -->
-
----
-
-## How I got here
+<img src="https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/main/assets/h-path.svg" width="100%" alt="How I got here" />
 
 <table>
-<tr><td width="90"><b>2023</b></td><td>Started B.Tech IT + MBA at IIITM Gwalior. Spent the first year in C — pointers, manual allocation, the stuff that makes you careful later.</td></tr>
+<tr><td width="110"><b>2023</b></td><td>Started B.Tech IT + MBA at IIITM Gwalior. Spent the first year in C — pointers, manual allocation, the stuff that makes you careful later.</td></tr>
 <tr><td><b>early 2024</b></td><td>Figma and design systems. Prototyped <b>CampusSafe</b>, a campus emergency SOS app. Nothing I've built since has been improved by forgetting that someone has to use it.</td></tr>
 <tr><td><b>late 2024</b></td><td>C++ and OOP. Implemented the core data structures myself rather than importing them, which is where most of my instinct for cost per operation came from.</td></tr>
 <tr><td><b>early 2025</b></td><td>Moved to Python — PyTorch, NLP, first RAG experiments and transformer pipelines.</td></tr>
 <tr><td><b>mid 2025</b></td><td>Built <b>AyuSynapse</b> solo at a healthcare AI hackathon: FHIR EMR parsing into BioBERT NER into ChromaDB, matching patients to clinical trials in a 36-hour sprint.</td></tr>
-<tr><td><b>late 2025</b></td><td>Internships at Trionix and Bizzkonnect, as the only developer on both. Postgres schemas, Row-Level Security, and the first time a design mistake of mine had users attached to it.</td></tr>
-<tr><td><b>now</b></td><td>Streaming data and trust boundaries. <b>GridPulse</b> on Kafka and Spark, the <b>MCP gateway</b> on seccomp, and DSA most days.</td></tr>
+<tr><td><b>late 2025</b></td><td>Internships at Trionix and Bizzkonnect, sole developer on both. Postgres schemas, Row-Level Security, real users.</td></tr>
+<tr><td><b>now</b></td><td>Streaming data and trust boundaries. <b>GridPulse</b> on Kafka and Spark, the <b>MCP gateway</b> on seccomp, <b>CIDRA</b> on LangGraph — and DSA most days.</td></tr>
 </table>
 
----
+<img src="https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/main/assets/rule.svg" width="100%" alt="" />
 
-## Open source
+<img src="https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/main/assets/h-dsa.svg" width="100%" alt="DSA" />
+
+The most consistent thing I do. 852 problems, most days, for long enough that the C++ years and the "cost per operation" instinct above are the same story.
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/main/assets/dsa.svg" width="92%" alt="LeetCode 393 medium and 55 hard at contest rating 1612, GeeksforGeeks 260+, Code360 100+ with 2x monthly topper — 852 total" />
+
+<br/>
+
+<sub><a href="https://leetcode.com/u/abhiii1005_/">LeetCode</a> · <a href="https://www.geeksforgeeks.org/profile/abhi_iiitm">GeeksforGeeks</a> · <a href="https://www.naukri.com/code360/profile/1d0eab26-a66e-4d90-99ed-46328d444eab">Code360</a> · all of it tracked on <a href="https://codolio.com/profile/abhishek_1005">Codolio</a></sub>
+
+</div>
+
+<img src="https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/main/assets/rule.svg" width="100%" alt="" />
+
+<img src="https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/main/assets/h-oss.svg" width="100%" alt="Open source" />
+
+I'm early here. One merged PR upstream, not twenty, and I'd rather say that than pad the section.
 
 **[kubeflow/trainer #3960](https://github.com/kubeflow/trainer/pull/3960)** — merged into the CNCF Kubeflow project's Kubernetes-native distributed ML training orchestrator.
 
-<!-- Replace this line with 2–3 sentences on what the PR actually changed and why it was non-obvious.
-     The specific bug is far more interesting than the fact that it merged. -->
+<!-- TODO: 2-3 sentences on what this PR actually changed and why it wasn't obvious.
+     The specific bug is far more interesting than the fact that it merged.
+     Reviewers read this line and nothing else in the section. -->
 
-Also: active **GSSoC** contributor, and a published inference model on [HuggingFace Hub](https://huggingface.co/abhishek1005).
+Also contributing through **GSSoC**, and a published inference model on [HuggingFace Hub](https://huggingface.co/abhishek1005). More to come — the goal for this section next year is that it's the longest one on the page.
 
----
+<img src="https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/main/assets/rule.svg" width="100%" alt="" />
 
-## Stack
+<img src="https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/main/assets/h-stack.svg" width="100%" alt="Stack" />
 
 <div align="center">
 
@@ -136,25 +159,9 @@ Also: active **GSSoC** contributor, and a published inference model on [HuggingF
 
 </div>
 
----
+<img src="https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/main/assets/rule.svg" width="100%" alt="" />
 
-## DSA
-
-<div align="center">
-
-| | solved | |
-|:---|:---:|:---|
-| [LeetCode](https://leetcode.com/u/abhiii1005_/) | 393 medium · 55 hard | contest rating 1612 |
-| [GeeksforGeeks](https://www.geeksforgeeks.org/profile/abhi_iiitm) | 260+ | active |
-| [Code360](https://www.naukri.com/code360/profile/1d0eab26-a66e-4d90-99ed-46328d444eab) | 100+ | 2x monthly topper |
-
-<sub>852 total, tracked in one place on <a href="https://codolio.com/profile/abhishek_1005">Codolio</a></sub>
-
-</div>
-
----
-
-## Lately
+<img src="https://raw.githubusercontent.com/Abhishek86798/Abhishek86798/main/assets/h-lately.svg" width="100%" alt="Lately" />
 
 <div align="center">
 
